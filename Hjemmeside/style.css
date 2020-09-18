@@ -1,0 +1,26 @@
+body{
+    background-color:rgb(29, 33, 33);
+    color:white;
+    float:right;
+}
+
+h3{
+    font-size: 40px;
+}
+
+p{
+    font-size:20px;
+}
+
+.outer{
+    text-align: center;
+    border-width: 20px;
+    border-color:white;
+    border-style:dotted;
+}
+
+.inner{
+    border-color:white;
+    border-width:20px;
+    border-style:solid;
+}
