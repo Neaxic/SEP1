@@ -8,5 +8,13 @@ body {
     font-weight: bold;
 }
 
+.projectLeft {
+    width: 40%;
+}
+
+.projectRight {
+    width: 40%;
+}
+
 
 /* End by Kasper*/
