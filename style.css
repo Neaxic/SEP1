@@ -52,6 +52,7 @@ nav ul li a:hover{
 }
 
 #landing h1{
+    display:inline-block;
     text-align: center;
     font-size:100px;
     color:white;
