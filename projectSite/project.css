@@ -1,0 +1,25 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+td {
+    border: 1px solid black;
+}
+
+#tableContaioner {
+    width: 78%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.tableTitle {
+    width: 10%;
+}
+
+.tableTitle {
+    font-weight: bolder;
+}
