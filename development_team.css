@@ -1,0 +1,28 @@
+/* MAJA */
+
+#Team {
+
+    background-image: url(images/colour-contrast-banner-2.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 250px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.development_intro {
+    font-weight:900;
+    font-size: larger;
+    width: 100%;
+}
+
+.column {
+    float: left;
+    width: 28.39%;
+    padding: 15.4px;
+
+}
+
+/* MAJA SLUT */
