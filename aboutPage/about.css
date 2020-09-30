@@ -1,19 +1,33 @@
 /*Start by Kasper*/
 
-body {
-    background-color: lightgray;
-}
-
 .projectListItem {
     font-weight: bold;
+    font-size: larger;
+    width: 100%;
 }
 
 .projectLeft {
     width: 40%;
+    display: inline-block;
 }
 
 .projectRight {
     width: 40%;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.projectImg {
+    height: 150px;
+    border-radius: 25px;
+}
+
+.project {
+    border: black solid 1px;
+    border-radius: 25px;
+    padding: 10px;
+    height: 250px;
+    text-align: center;
 }
 
 
