@@ -53,9 +53,30 @@ nav ul li a:hover{
 
 #landing h1{
     display:inline-block;
-    text-align: center;
-    font-size:100px;
+    font-size:200px;
+    margin-top:200px;
+    margin-bottom: 0px;
     color:white;
+    text-align: center;
+    width: 100%;
+}
+
+#landing h4{
+    text-align: center;
+    font-size:40px;
+    color:white;
+}
+
+#Events{
+    background-color: black;
+    width: 100%;
+}
+
+.Event{
+    background-color:blue;
+    text-align: center;
+    color:red;
+    display: inline-block;
 }
 
 /* ANDREAS SLUT */
