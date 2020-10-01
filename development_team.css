@@ -3,8 +3,9 @@
 #Team {
 
     background-image: url(images/colour-contrast-banner-2.png);
+    /* billede fra google den 30 sep. 2020: https://www.stryvemarketing.com/wp-content/uploads/2019/03/colour-contrast-banner-2.gif */
     background-position: center;
-    background-repeat: none;
+    background-repeat: none; 
     background-size: cover;
     height: 250px;
     text-align: center;
@@ -13,7 +14,7 @@
 }
 
 .development_intro {
-    font-weight:900;
+    font-weight: 900;
     font-size: larger;
     width: 100%;
 }
@@ -24,5 +25,22 @@
     padding: 15.4px;
 
 }
+
+#Navn {
+    font-weight: bold;
+    font-size: larger;
+    width: 100%;
+
+}
+
+#e-mail {
+    font-weight: 100;
+    font-size: larger;
+    width: 100%;
+}
+
+#Back {
+    float: right
+
 
 /* MAJA SLUT */

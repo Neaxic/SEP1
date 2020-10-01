@@ -1,0 +1,31 @@
+header{
+    padding:10px;
+    height: 70px;
+    position: relative;
+    border-bottom: 1px solid rgb(200,200,200);
+}
+
+header img{
+    margin-top:10px;
+}
+
+nav{
+    float:right;
+    width:50%;
+    margin-right:50px;
+}
+
+nav ul li{
+    list-style:none;
+    float:right;
+    margin-top:10px;
+    margin-right:30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
