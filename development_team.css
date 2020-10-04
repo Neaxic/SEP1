@@ -1,22 +1,43 @@
 /* MAJA */
 
-#Team {
+body {
+    background-image: linear-gradient(to bottom, #ffffff 19%, #ccffff 146%);
+    
+    /* Maja: gradineret farve fundet ved hjælp af https://www.w3schools.com/colors/colors_gradient.asp */
 
-    background-image: url(images/colour-contrast-banner-2.png);
-    /* billede fra google den 30 sep. 2020: https://www.stryvemarketing.com/wp-content/uploads/2019/03/colour-contrast-banner-2.gif */
-    background-position: center;
-    background-repeat: none; 
-    background-size: cover;
-    height: 250px;
-    text-align: center;
-    font-size: 25px;
-    color: white;
+    /* Maja: bruges til at gentage effekten af banner, bare modsat*/
 }
 
-.development_intro {
-    font-weight: 900;
-    font-size: larger;
+
+#Banner {
+
+    background-image: url(images/colour-contrast-banner-2.png);
+
+    /* Maja: billede fra google den 30 sep. 2020: https://www.stryvemarketing.com/wp-content/uploads/2019/03/colour-contrast-banner-2.gif */
+
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 250px;
     width: 100%;
+    box-sizing: border-box;
+    padding: 45px;
+
+}
+
+#Banner_tekst {
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    margin: auto;
+    text-shadow: 2px 2px 7px #000000;
+}
+
+
+#development_intro {
+    font-size: 119.3%;
+    font-weight: bold;
+
 }
 
 .column {
@@ -39,8 +60,11 @@
     width: 100%;
 }
 
-#Back {
-    float: right
+.e-mail:link {
+    color:blue
+}
+.e-mail:hover{
+    color:orange
 
 
 /* MAJA SLUT */
