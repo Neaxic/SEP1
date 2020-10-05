@@ -1,13 +1,19 @@
 /*Start by Kasper*/
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
 #wholeAboutUsPage {
-    background-image: linear-gradient( #dce400, #f8ffa2);
-    position: fixed;
+    background-color: rebeccapurple;
+    background-image: linear-gradient(rebeccapurple, #ffffff);
     top: 0;
     left: 0;
     /* Preserve aspet ratio */
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 75%;
+    min-height: 75%;
+    width: 100%;
 }
 
 .projectListItem {
@@ -24,22 +30,25 @@
 .projectRight {
     width: 40%;
     display: inline-block;
-    padding-left: 20px;
+    padding-left: 0px;
     text-align: left;
 }
 
+.projectRight  {
+    padding-bottom: 80%;
+}
+
 .projectImg {
-    height: 150px;
-    border-radius: 25px;
-    padding-bottom: 10px;
+    height: 200px;
+    padding-bottom: 0px;
 }
 
 .project {
-    border: black solid 1px;
-    border-radius: 25px;
+    box-shadow: -1px 5px 23px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
     padding: 10px;
-    height: 250px;
-    width: 40%;
+    height: 300px;
+    width: 90%;
     display: inline-block;
     margin: 10px;
     background-color: white;
@@ -49,10 +58,35 @@
     text-align: center;
 }
 
+#projectsDiv h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-left: 25px;
+}
+
 a {
     text-decoration: none;
     color: black;
     text-decoration: underline;
+}
+
+#projectsDivContent {
+    width: 80%;
+    margin: auto;
+}
+
+#content {
+    width: 90%;
+    margin: auto;
+}
+
+#AboutUsInfo #aboutUsTitle {
+    font-family: 'Raleway', sans-serif;
+}
+
+#AboutUsInfo {
+    text-align: left;
+    padding: 25px;
 }
 
 
