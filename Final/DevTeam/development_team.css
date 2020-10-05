@@ -72,8 +72,6 @@ body {
 /* ANDREAS START */
 body{
     width:100%;
-    background-color:rgb(255,255,255);
-    color:black;
     margin:0;
 }
 
@@ -107,6 +105,14 @@ nav ul li a{
 }
 nav ul li a:hover{
     text-decoration: underline;
+}
+
+footer{
+    padding: 10px 100px 10px 100px;
+    color:white;
+    float:left;
+    width:90%;
+    background-color: rgb(46, 46, 46);
 }
 
 /* ANDREAS SLUT */

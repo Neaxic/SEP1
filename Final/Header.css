@@ -1,3 +1,5 @@
+/*ANDREAS START */
+
 header {
     padding: 10px;
     height: 70px;
@@ -31,3 +33,11 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+footer{
+    padding: 10px 100px 10px 100px;
+    color:white;
+    background-color: rgb(46, 46, 46);
+}
+
+/*ANDREAS SLUT */
