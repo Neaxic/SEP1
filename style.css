@@ -1,56 +1,70 @@
 /* ANDREAS */
-body{
-    width:100%;
-    background-color:rgb(255,255,255);
-    color:black;
-    margin:0;
+body {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin: 0;
 }
 
-header{
-    padding:10px;
+header {
+    padding: 10px;
     height: 70px;
     position: relative;
-    border-bottom: 1px solid rgb(200,200,200);
+    border-bottom: 1px solid rgb(200, 200, 200);
 }
 
-header img{
-    margin-top:10px;
+header img {
+    margin-top: 10px;
 }
 
-nav{
-    float:right;
-    width:50%;
-    margin-right:50px;
+nav {
+    float: right;
+    width: 50%;
+    margin-right: 50px;
 }
 
-nav ul li{
-    list-style:none;
-    float:right;
-    margin-top:10px;
-    margin-right:30px;
+nav ul li {
+    list-style: none;
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: black;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-#active{
+#active {
     text-decoration: underline;
-    color:gray;
+    color: gray;
 }
 
-#landing{
+#landing {
     background-image: url(images/landing.jpg);
     background-position: center;
     background-repeat: none;
-    background-size:cover;
-    height:700px;
+    background-size: cover;
+    height: 700px;
+    /* MAJA */
+    /*Billede er hentet fra google den 25 sep. 2020: https://https://www.ceramicarondine.it/media/filer_public_thumbnails/filer_public/dd/4a/dd4abdd1-cfa8-4a6e-950b-28fc33f796f1/natural-colour-system__990x670_q85_crop_subsampling-2.jpg */
+    /* MAJA SLUT*/
 }
 
+<<<<<<< HEAD
+#landing h1 {
+    display: inline-block;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+/* ANDREAS SLUT */
+=======
 #landing h1{
     display:inline-block;
     font-size:200px;
@@ -67,16 +81,33 @@ nav ul li a:hover{
     color:white;
 }
 
-#Events{
-    background-color: black;
-    width: 100%;
+#EventsText{
+    margin-top:70px;
+    margin-left: 70px;
 }
 
-.Event{
-    background-color:blue;
+#Events{
+    width: 90%;
+    display:flex;
+    justify-content: center;
+    margin: 70px 5% 30px 5%
+}
+
+#Events img{
+    width:70%;
+    height:130px;
+}
+
+#Events div{
     text-align: center;
-    color:red;
     display: inline-block;
+    width:33%;
+    margin-left: 0px;
+}
+
+.link{
+    
 }
 
 /* ANDREAS SLUT */
+>>>>>>> 69734d27f274f9394b10e6eeaa1d162e51c92025
