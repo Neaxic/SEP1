@@ -1,0 +1,118 @@
+/* MAJA */
+
+body {
+    background-image: linear-gradient(to bottom, #ffffff 19%, #ccffff 146%);
+    
+    /* Maja: gradineret farve fundet ved hjælp af https://www.w3schools.com/colors/colors_gradient.asp */
+
+    /* Maja: bruges til at gentage effekten af banner, bare modsat*/
+}
+
+
+#Banner {
+
+    background-image: url(../images/colour-contrast-banner-2.png);
+
+    /* Maja: billede fra google den 30 sep. 2020: https://www.stryvemarketing.com/wp-content/uploads/2019/03/colour-contrast-banner-2.gif */
+
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 45px;
+
+}
+
+#Banner_tekst {
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    margin: auto;
+    text-shadow: 2px 2px 7px #000000;
+}
+
+
+#development_intro {
+    font-size: 119.3%;
+    font-weight: bold;
+
+}
+
+.column {
+    float: left;
+    width: 28.39%;
+    padding: 15.4px;
+
+}
+
+#Navn {
+    font-weight: bold;
+    font-size: larger;
+    width: 100%;
+
+}
+
+#e-mail {
+    font-weight: 100;
+    font-size: larger;
+    width: 100%;
+}
+
+.e-mail:link {
+    color:blue
+}
+.e-mail:hover{
+    color:orange
+}
+
+/* MAJA SLUT */
+
+/* ANDREAS START */
+body{
+    width:100%;
+    margin:0;
+}
+
+header{
+    padding:10px;
+    height: 70px;
+    position: relative;
+    border-bottom: 1px solid rgb(200,200,200);
+}
+
+header img{
+    margin-top:10px;
+}
+
+nav{
+    float:right;
+    width:50%;
+    margin-right:50px;
+}
+
+nav ul li{
+    list-style:none;
+    float:right;
+    margin-top:10px;
+    margin-right:30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    padding: 10px 100px 10px 100px;
+    color:white;
+    float:left;
+    width:90%;
+    background-color: rgb(46, 46, 46);
+}
+
+/* ANDREAS SLUT */

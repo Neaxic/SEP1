@@ -1,0 +1,113 @@
+/* ANDREAS */
+body{
+    width:100%;
+    background-color:rgb(255,255,255);
+    color:black;
+    margin:0;
+    font-family: raleway;
+}
+
+header{
+    padding:10px;
+    height: 70px;
+    position: relative;
+    border-bottom: 1px solid rgb(200,200,200);
+}
+
+header img{
+    margin-top:10px;
+}
+
+nav{
+    float:right;
+    width:50%;
+    margin-right:50px;
+}
+
+nav ul li{
+    list-style:none;
+    float:right;
+    margin-top:10px;
+    margin-right:30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+#active{
+    text-decoration: underline;
+    color:gray;
+}
+
+#landing{
+    background-image: url(images/landing.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size:cover;
+    height:700px;
+}
+
+#landing h1{
+    display:inline-block;
+    font-size:200px;
+    margin-top:200px;
+    margin-bottom: 0px;
+    color:white;
+    text-align: center;
+    width: 100%;
+}
+
+#landing h4{
+    text-align: center;
+    font-size:40px;
+    color:white;
+}
+
+#ProjectOverview{
+    display: flex;
+    justify-content: center;
+}
+
+#ProjectOverview div{
+    width:80%;
+    background-color:rgb(208, 208, 208);
+}
+
+#ProjectText{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#ProjectText h2{
+    font-size: 50px;
+}
+
+#Projects{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#Projects img{
+    width:70%;
+    height:130px;
+}
+
+#Projects div{
+    text-align: center;
+}
+
+
+footer{
+    padding: 10px 100px 10px 100px;
+    color:white;
+    background-color: rgb(46, 46, 46);
+}
+
+/* ANDREAS SLUT */
