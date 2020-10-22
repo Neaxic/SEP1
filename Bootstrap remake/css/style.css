@@ -116,7 +116,7 @@ body {
   margin: 0;
 }
 
-#wholeAboutUsPage {
+#Projects {
   background-color: rebeccapurple;
   background-image: linear-gradient(#fcdb03, #ffffff);
   top: 0;
@@ -194,12 +194,27 @@ a {
 #AboutUsInfo {
   text-align: left;
   padding: 25px;
+    height: 400px;
 }
+
 
 
 /* End by Kasper*/
 
 /* MAJA */
+
+#servicesDiv {
+  text-align: left;
+}
+
+#Servises_Title{
+   font-family: 'Raleway', sans-serif; 
+}
+#Services {
+  text-align: left;
+  padding: 25px;
+    height: 1000px;
+}
 
 #Maja {
   background-image: linear-gradient(to bottom, #ffffff 19%, #ccffff 146%);
