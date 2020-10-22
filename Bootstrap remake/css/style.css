@@ -107,3 +107,164 @@ footer {
 }
 
 /* ANDREAS SLUT */
+
+
+/*Start by Kasper ------------------------------------------- ------------------------------------------- */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#wholeAboutUsPage {
+  background-color: rebeccapurple;
+  background-image: linear-gradient(#fcdb03, #ffffff);
+  top: 0;
+  left: 0;
+  /* Preserve aspet ratio */
+  min-width: 75%;
+  min-height: 75%;
+  width: 100%;
+}
+
+.projectListItem {
+  font-weight: bold;
+  font-size: larger;
+  width: 100%;
+}
+
+.projectLeft {
+  width: 40%;
+  display: inline-block;
+}
+
+.projectRight {
+  width: 40%;
+  display: inline-block;
+  padding-left: 0px;
+  text-align: left;
+}
+
+.projectImg {
+  height: 200px;
+  padding-bottom: 0px;
+}
+
+.project {
+  box-shadow: -1px 5px 23px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  padding: 10px;
+  height: 300px;
+  width: 90%;
+  display: inline-block;
+  margin: 10px;
+  background-color: white;
+}
+
+#projectsDiv {
+  text-align: center;
+}
+
+#projectsDiv h1 {
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  margin-left: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+}
+
+#projectsDivContent {
+  width: 80%;
+  margin: auto;
+}
+
+#content {
+  width: 90%;
+  margin: auto;
+}
+
+#AboutUsInfo #aboutUsTitle {
+  font-family: 'Raleway', sans-serif;
+}
+
+#AboutUsInfo {
+  text-align: left;
+  padding: 25px;
+}
+
+
+/* End by Kasper*/
+
+/* MAJA */
+
+#Maja {
+  background-image: linear-gradient(to bottom, #ffffff 19%, #ccffff 146%);
+  
+  /* Maja: gradineret farve fundet ved hjælp af https://www.w3schools.com/colors/colors_gradient.asp */
+
+  /* Maja: bruges til at gentage effekten af banner, bare modsat*/
+}
+
+
+#Banner {
+
+  background-image: url(../images/colour-contrast-banner-2.png);
+
+  /* Maja: billede fra google den 30 sep. 2020: https://www.stryvemarketing.com/wp-content/uploads/2019/03/colour-contrast-banner-2.gif */
+
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 45px;
+
+}
+
+#Banner_tekst {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  margin: auto;
+  text-shadow: 2px 2px 7px #000000;
+}
+
+
+#development_intro {
+  font-size: 119.3%;
+  font-weight: bold;
+
+}
+
+.column {
+  width: 28.39%;
+  padding: 15.4px;
+
+}
+
+#Navn {
+  font-weight: bold;
+  font-size: larger;
+  width: 100%;
+
+}
+
+#e-mail {
+  font-weight: 100;
+  font-size: larger;
+  width: 100%;
+}
+
+.e-mail:link {
+  color:blue
+}
+.e-mail:hover{
+  color:orange
+}
+
+/* MAJA SLUT */
