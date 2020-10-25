@@ -1,37 +1,10 @@
 /* ANDREAS */
-
-header {
-  padding: 10px;
-  height: 70px;
-  position: relative;
-  border-bottom: 1px solid rgb(200, 200, 200);
-  background-color: white;
+#myNavbar {
+  justify-content: right;
 }
 
-header img {
-  margin-top: 10px;
-}
-
-nav {
-  float: right;
-  width: 50%;
-  margin-right: 50px;
-}
-
-nav ul li {
-  list-style: none;
-  float: right;
-  margin-top: 10px;
-  margin-right: 30px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
+.navbar-brand {
+  font-size: 100px;
 }
 
 #landing {
@@ -43,6 +16,7 @@ nav ul li a:hover {
 }
 
 #landing h1 {
+  padding-top: 10%;
   font-size: 200px;
   color: white;
   text-align: center;
@@ -77,7 +51,6 @@ nav ul li a:hover {
 }
 
 #projects div div h4 {
-  text-align: center;
   font-weight: 700;
   font-size: 50px;
   color: #ffffff;
@@ -87,10 +60,6 @@ nav ul li a:hover {
 
 #projects div div p {
   padding: 0 5% 0 5%;
-  text-align: center;
-}
-#projects div div a {
-  text-align: center;
 }
 
 #projects div:nth-child(1) h4 {
@@ -107,7 +76,6 @@ footer {
 }
 
 /* ANDREAS SLUT */
-
 
 /*Start by Kasper ------------------------------------------- ------------------------------------------- */
 
@@ -166,7 +134,7 @@ body {
 }
 
 #projectsDiv h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: left;
   margin-left: 25px;
 }
@@ -188,16 +156,14 @@ a {
 }
 
 #AboutUsInfo #aboutUsTitle {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 #AboutUsInfo {
   text-align: left;
   padding: 25px;
-    height: 400px;
+  height: 400px;
 }
-
-
 
 /* End by Kasper*/
 
@@ -207,26 +173,24 @@ a {
   text-align: left;
 }
 
-#Servises_Title{
-   font-family: 'Raleway', sans-serif; 
+#Servises_Title {
+  font-family: "Raleway", sans-serif;
 }
 #Services {
   text-align: left;
   padding: 25px;
-    height: 1000px;
+  height: 1000px;
 }
 
 #Maja {
   background-image: linear-gradient(to bottom, #ffffff 19%, #ccffff 146%);
-  
+
   /* Maja: gradineret farve fundet ved hjælp af https://www.w3schools.com/colors/colors_gradient.asp */
 
   /* Maja: bruges til at gentage effekten af banner, bare modsat*/
 }
 
-
 #Banner {
-
   background-image: url(../images/colour-contrast-banner-2.png);
 
   /* Maja: billede fra google den 30 sep. 2020: https://www.stryvemarketing.com/wp-content/uploads/2019/03/colour-contrast-banner-2.gif */
@@ -238,7 +202,6 @@ a {
   width: 100%;
   box-sizing: border-box;
   padding: 45px;
-
 }
 
 #Banner_tekst {
@@ -249,24 +212,20 @@ a {
   text-shadow: 2px 2px 7px #000000;
 }
 
-
 #development_intro {
   font-size: 119.3%;
   font-weight: bold;
-
 }
 
 .column {
   width: 28.39%;
   padding: 15.4px;
-
 }
 
 #Navn {
   font-weight: bold;
   font-size: larger;
   width: 100%;
-
 }
 
 #e-mail {
@@ -276,10 +235,10 @@ a {
 }
 
 .e-mail:link {
-  color:blue
+  color: blue;
 }
-.e-mail:hover{
-  color:orange
+.e-mail:hover {
+  color: orange;
 }
 
 /* MAJA SLUT */
