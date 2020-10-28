@@ -252,6 +252,11 @@ a {
     background-color: gray;
 }
 
+#projectsPop table th,
+td {
+    border: 1px black solid;
+}
+
 
 /* End by Kasper*/
 
