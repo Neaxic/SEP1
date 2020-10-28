@@ -85,5 +85,20 @@ a {
     padding: 25px;
 }
 
+#slides {
+    color: grey;
+    background-color: grey !important;
+}
+
+.carousel {
+    color: grey;
+    background-color: grey !important;
+}
+
+.carousel .item {
+    color: grey;
+    background-color: grey;
+}
+
 
 /* End by Kasper*/
