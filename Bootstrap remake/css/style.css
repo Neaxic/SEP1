@@ -1,9 +1,8 @@
 /* ANDREAS */
-
-.navbar-brand {
-    color: #ffffff;
-    font-weight: bold;
-    text-shadow: 4px 3px 0px #f3755f;
+.navbar-brand{
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 3px 2px 0px #f3755f;
 }
 
 input {
@@ -262,7 +261,6 @@ a {
 #Services {
     text-align: left;
     padding: 25px;
-    height: 1000px;
 }
 
 #Maja {
@@ -318,10 +316,21 @@ a {
     font-weight: bold;
 }
 
-.column {
-    width: 28.39%;
-    padding: 15.4px;
+/* ANDREAS FIXED BUTTON START */
+
+#ServiceFixed{
+    position: fixed;
+    top:50%;
+    width:5%;
+    left:2%;
 }
+
+#ServiceFixed button{
+    border: none;
+    text-decoration: none;
+}
+
+/* ANDREAS FIXED BUTTON SLUT */
 
 #Navn {
     font-weight: bold;
