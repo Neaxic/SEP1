@@ -182,17 +182,67 @@ a {
     height: 400px;
 }
 
-#projects {
-    padding-top: 20px;
+#projectsPop {
+    padding: 20px;
     border: 1px gray solid;
+    margin: 100px;
 }
 
-#projects .col-lg-4 img {
+#projectsPop .col-lg-4 img {
     width: 100%;
 }
 
 #development_intro {
     padding: 25px;
+}
+
+#myBar1 {
+    width: 50%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    /* To center it horizontally (if you want) */
+    line-height: 30px;
+    /* To center it vertically */
+    color: white;
+}
+
+#myBar2 {
+    width: 30%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    /* To center it horizontally (if you want) */
+    line-height: 30px;
+    /* To center it vertically */
+    color: white;
+}
+
+#myBar3 {
+    width: 80%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    /* To center it horizontally (if you want) */
+    line-height: 30px;
+    /* To center it vertically */
+    color: white;
+}
+
+#myBar4 {
+    width: 10%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    /* To center it horizontally (if you want) */
+    line-height: 30px;
+    /* To center it vertically */
+    color: white;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: gray;
 }
 
 
@@ -234,8 +284,9 @@ a {
     box-sizing: border-box;
     padding: 45px;
 }
-#Banner_c{
-     background-image: url(../images/starting-colors-wide-32.png);
+
+#Banner_c {
+    background-image: url(../images/starting-colors-wide-32.png);
     /* Maja: billede fra google den 30 sep. 2020: https://www.stryvemarketing.com/wp-content/uploads/2019/03/colour-contrast-banner-2.gif */
     background-position: center;
     background-repeat: none;
@@ -261,6 +312,7 @@ a {
     margin: auto;
     text-shadow: 2px 2px 7px #000000;
 }
+
 #development_intro {
     font-size: 119.3%;
     font-weight: bold;
