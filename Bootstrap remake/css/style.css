@@ -193,6 +193,9 @@ a {
     background-image: linear-gradient(to bottom, #ffffff 19%, #ccffff 146%);
     /* Maja: gradineret farve fundet ved hjælp af https://www.w3schools.com/colors/colors_gradient.asp */
     /* Maja: bruges til at gentage effekten af banner, bare modsat*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
 }
 
 #Banner {
