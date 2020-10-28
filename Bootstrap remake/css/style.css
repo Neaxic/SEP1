@@ -1,8 +1,10 @@
 /* ANDREAS */
-.navbar-brand{
-  color: #ffffff;
-  font-weight: bold;
-  text-shadow: 3px 2px 0px #f3755f;
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 3px 2px 0px #f3755f;
+    padding-left: 1%;
 }
 
 input {
@@ -26,20 +28,27 @@ input:focus {
     background-position: center;
     background-repeat: none;
     background-size: cover;
-    height: 700px;
+    /*Kasper Start*/
+    height: 40vw;
+    width: 102%;
 }
 
 #landing h1 {
-    font-size: 200px;
+    font-size: 10vw;
+    font-weight: BOLDER;
     color: white;
     text-align: center;
 }
 
 #landing h4 {
     text-align: center;
-    font-size: 40px;
+    font-size: 5vw;
     color: white;
+    font-weight: 300;
 }
+
+
+/*Kasper End*/
 
 .contact {
     background-color: #eeaf3b;
@@ -178,20 +187,69 @@ a {
 #AboutUsInfo {
     text-align: left;
     padding: 25px;
-    height: 400px;
 }
 
-#projects {
-    padding-top: 20px;
+#projectsPop {
+    padding: 20px;
     border: 1px gray solid;
+    margin: 100px;
 }
 
-#projects .col-lg-4 img {
+#projectsPop .col-lg-4 img {
     width: 100%;
 }
 
 #development_intro {
     padding: 25px;
+}
+
+#myBar1 {
+    width: 50%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    /* To center it horizontally (if you want) */
+    line-height: 30px;
+    /* To center it vertically */
+    color: white;
+}
+
+#myBar2 {
+    width: 30%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    /* To center it horizontally (if you want) */
+    line-height: 30px;
+    /* To center it vertically */
+    color: white;
+}
+
+#myBar3 {
+    width: 80%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    /* To center it horizontally (if you want) */
+    line-height: 30px;
+    /* To center it vertically */
+    color: white;
+}
+
+#myBar4 {
+    width: 10%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    /* To center it horizontally (if you want) */
+    line-height: 30px;
+    /* To center it vertically */
+    color: white;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: gray;
 }
 
 
@@ -221,8 +279,8 @@ a {
     background-size: 100%;
 }
 
-#Banner {
-    background-image: url(../images/colour-contrast-banner-2.png);
+#Banner_c {
+    background-image: url(../images/starting-colors-wide-32.png);
     /* Maja: billede fra google den 30 sep. 2020: https://www.stryvemarketing.com/wp-content/uploads/2019/03/colour-contrast-banner-2.gif */
     background-position: center;
     background-repeat: none;
@@ -230,26 +288,7 @@ a {
     height: 250px;
     width: 100%;
     box-sizing: border-box;
-    padding: 45px;
-}
-#Banner_c{
-     background-image: url(../images/starting-colors-wide-32.png);
-    /* Maja: billede fra google den 30 sep. 2020: https://www.stryvemarketing.com/wp-content/uploads/2019/03/colour-contrast-banner-2.gif */
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
-    height: 250px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 50px;
-}
-
-#Banner_tekst {
-    text-align: center;
-    font-size: 28px;
-    color: white;
-    margin: auto;
-    text-shadow: 2px 2px 7px #000000;
+    padding: 90px;
 }
 
 #Banner_tekst_c {
@@ -259,24 +298,27 @@ a {
     margin: auto;
     text-shadow: 2px 2px 7px #000000;
 }
+
 #development_intro {
     font-size: 119.3%;
     font-weight: bold;
 }
 
+
 /* ANDREAS FIXED BUTTON START */
 
-#ServiceFixed{
+#ServiceFixed {
     position: fixed;
-    top:50%;
-    width:5%;
-    left:2%;
+    top: 50%;
+    width: 5%;
+    left: 2%;
 }
 
-#ServiceFixed button{
+#ServiceFixed button {
     border: none;
     text-decoration: none;
 }
+
 
 /* ANDREAS FIXED BUTTON SLUT */
 
