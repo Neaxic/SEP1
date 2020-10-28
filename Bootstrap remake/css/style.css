@@ -234,6 +234,17 @@ a {
     box-sizing: border-box;
     padding: 45px;
 }
+#Banner_c{
+     background-image: url(../images/starting-colors-wide-32.png);
+    /* Maja: billede fra google den 30 sep. 2020: https://www.stryvemarketing.com/wp-content/uploads/2019/03/colour-contrast-banner-2.gif */
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+}
 
 #Banner_tekst {
     text-align: center;
@@ -243,6 +254,13 @@ a {
     text-shadow: 2px 2px 7px #000000;
 }
 
+#Banner_tekst_c {
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    margin: auto;
+    text-shadow: 2px 2px 7px #000000;
+}
 #development_intro {
     font-size: 119.3%;
     font-weight: bold;
