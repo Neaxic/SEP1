@@ -1,19 +1,21 @@
 /* ANDREAS */
-.navbar-brand{
-  color: #ffffff;
-  font-weight: bold;
-  text-shadow: 4px 3px 0px #f3755f;
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 4px 3px 0px #f3755f;
 }
 
-input{
-  border: none;
-  width: 20%;
-  border-bottom: 2px solid #f3755f;
+input {
+    border: none;
+    width: 20%;
+    border-bottom: 2px solid #f3755f;
 }
-input:focus{
-  transition-delay: 10ms;
-  transition: ease-in;
-  border-bottom: 2px solid #665ff3;
+
+input:focus {
+    transition-delay: 10ms;
+    transition: ease-in;
+    border-bottom: 2px solid #665ff3;
 }
 
 #myNavbar {
@@ -180,6 +182,19 @@ a {
     height: 400px;
 }
 
+#projects {
+    padding-top: 20px;
+    border: 1px gray solid;
+}
+
+#projects .col-lg-4 img {
+    width: 100%;
+}
+
+#development_intro {
+    padding: 25px;
+}
+
 
 /* End by Kasper*/
 
@@ -206,7 +221,6 @@ a {
     /* Maja: bruges til at gentage effekten af banner, bare modsat*/
     background-repeat: no-repeat;
     background-size: 100%;
-    
 }
 
 #Banner {
