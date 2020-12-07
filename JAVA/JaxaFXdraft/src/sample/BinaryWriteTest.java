@@ -12,10 +12,9 @@ public class BinaryWriteTest {
         FileOutputStream fos = new FileOutputStream(file);
         ObjectOutputStream out = new ObjectOutputStream(fos);
 
-        String text = "Test";
+        Project project1 = new Project("RWD");
 
-        out.writeUTF(text);
-        out.flush();
+        out.writeObject(project1);
 
         out.close();
         System.out.println("End writing data to file: " + file.getAbsolutePath());
