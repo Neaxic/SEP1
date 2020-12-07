@@ -7,6 +7,11 @@
   font-size: 100px;
 }
 
+#activated {
+  color: red;
+  border-bottom: 3px solid rgb(131, 131, 131);
+}
+
 #landing {
   background-image: url(../images/landing.jpg);
   background-position: center;
