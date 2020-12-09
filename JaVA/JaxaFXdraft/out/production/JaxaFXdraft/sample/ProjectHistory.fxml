@@ -10,7 +10,7 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Label alignment="CENTER" prefHeight="140.0" prefWidth="652.0" style="-fx-background-color: lightgray;" text="Project History">
+      <Label fx:id="ProjectLabel" alignment="CENTER" prefHeight="140.0" prefWidth="652.0" style="-fx-background-color: lightgray;" text="Project History">
          <font>
             <Font size="17.0" />
          </font>
@@ -18,13 +18,13 @@
       <HBox alignment="CENTER" prefHeight="198.0" prefWidth="600.0">
          <children>
             <Label text="List of projects:" />
-            <ListView prefHeight="85.0" prefWidth="200.0">
+            <ListView fx:id="ProjectList" prefHeight="85.0" prefWidth="200.0">
                <HBox.margin>
                   <Insets left="20.0" />
                </HBox.margin>
             </ListView>
          </children>
       </HBox>
-      <Button fx:id="mainMenuCreateNew" mnemonicParsing="false" onAction="#mainMenuCreateNew" prefHeight="50.0" prefWidth="125.0" text="Back" />
+      <Button fx:id="mainMenuCreateNew" mnemonicParsing="false" onAction="#mainMenuSeeAll" prefHeight="50.0" prefWidth="125.0" text="Back" />
    </children>
 </VBox>

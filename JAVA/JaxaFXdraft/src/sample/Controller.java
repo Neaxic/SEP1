@@ -8,6 +8,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import javafx.scene.control.TextField;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.ListView;
+import javafx.scene.control.Label;
+
 import java.awt.*;
 import java.io.IOException;
 
@@ -33,7 +38,6 @@ public class Controller {
     }
 */
     public void loginScrum(ActionEvent actionEvent)  throws IOException{
-        System.out.println("Canceled - So closed the program");
         setSceneToMainMenu(actionEvent);
     }
 
@@ -64,14 +68,6 @@ public class Controller {
     public void mainMenuSeeAll(ActionEvent actionEvent)   throws IOException{
         setSceneToMainMenu(actionEvent);
     }
-    
-    /* CREATE PROJECT */
-
-    public void ss(ActionEvent actionEvent) throws IOException {
-        Stage window = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(FXMLLoader.load(getClass().getResource("CreatingProject.fxml")));
-        window.show();
-    }
 
     public void setSceneToMainMenu(ActionEvent event) throws IOException {
 
@@ -85,9 +81,24 @@ public class Controller {
         window.show();
     }
 
+    /* CREATE PROJECT */
+
     @FXML private TextField ProjectName;
-    @FXML private Button ProjectBtn;
+    @FXML private TextArea ProjectDescription;
+    @FXML private ListView ProjectList;
     @FXML private Label ProjectLabel;
+
+    public void projectCreate(ActionEvent actionEvent) throws IOException {
+        BinaryWriteTest test1 = new BinaryWriteTest();
+
+        Project newProject = new Project(ProjectName.getText());
+        newProject.setDescription(ProjectDescription.getText());
+        newProject.addToProjects(newProject);
+        System.out.println("New Project Title: " +newProject.getName());
+        System.out.println("New Project Description: " +newProject.getDescription());
+        test1.SaveProject(newProject);
+        setSceneToMainMenu(actionEvent);
+    }
 
     public void setSceneCreateProject(ActionEvent event) throws IOException {
         Scene nytVindue = new Scene(FXMLLoader.load(getClass().getResource("CreatingProject.fxml")));
@@ -103,5 +114,8 @@ public class Controller {
 
         window.setScene(nytVindue);
         window.show();
+
+        ProjectLabel.setText("test");
+
     }
 }
