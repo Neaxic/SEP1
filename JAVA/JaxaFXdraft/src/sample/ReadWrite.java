@@ -5,7 +5,7 @@ import java.io.*;
 public class ReadWrite {
 
     public void SaveProject(Projects project) throws IOException {
-        String filename = "test.bin";
+        String filename = "Database.bin";
         File file = new File(filename);
 
         FileOutputStream fos = new FileOutputStream(file);
@@ -16,7 +16,7 @@ public class ReadWrite {
     }
 
     public Projects readProjects() throws IOException, ClassNotFoundException {
-        String filename = "test.bin";
+        String filename = "Database.bin";
         File file = new File(filename);
 
         FileInputStream fis = new FileInputStream(file);

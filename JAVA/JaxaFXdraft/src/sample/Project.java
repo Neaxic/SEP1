@@ -9,7 +9,7 @@ public class Project implements Serializable{
     private int deadline;
 
     private ArrayList<Krav> kravListe = new ArrayList<>();
-    private ArrayList<Kollegaer> kollegaerListe = new ArrayList<>();
+    private ArrayList<Kollega> kollegaerListe = new ArrayList<>();
 
     public Project(String name){
         this.name = name;
@@ -40,7 +40,7 @@ public class Project implements Serializable{
         kollegaerListe.add(kollega);
     }
 
-    public ArrayList<Kollegaer> getKollega(){
+    public ArrayList<Kollega> getKollega(){
         return kollegaerListe;
     }
 }

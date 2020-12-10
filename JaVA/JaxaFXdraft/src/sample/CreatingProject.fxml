@@ -29,13 +29,18 @@
       <HBox alignment="CENTER" prefHeight="63.0" prefWidth="600.0">
          <children>
             <Label text="Project description: " />
-            <TextArea fx:id="ProjectDescription" prefHeight="200.0" prefWidth="200.0">
+            <TextArea fx:id="ProjectDescription" prefHeight="200.0" prefWidth="200.0" promptText="Description">
                <HBox.margin>
                   <Insets left="20.0" />
                </HBox.margin>
             </TextArea>
          </children>
       </HBox>
-      <Button fx:id="projectCreate" mnemonicParsing="false" onAction="#projectCreate" prefHeight="50.0" prefWidth="125.0" text="Create New Project" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="projectCreate" mnemonicParsing="false" onAction="#projectCreate" prefHeight="50.0" prefWidth="125.0" text="Back" />
+            <Button fx:id="projectCreate1" mnemonicParsing="false" onAction="#projectCreate" prefHeight="50.0" prefWidth="125.0" text="Create New Project" />
+         </children>
+      </HBox>
    </children>
 </VBox>

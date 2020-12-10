@@ -1,9 +1,9 @@
 package sample;
 
-public class Kollegaer {
+public class Kollega {
     private String navn;
 
-    public Kollegaer(String navn){
+    public Kollega(String navn){
         this.navn = navn;
     }
 
