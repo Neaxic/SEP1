@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Project implements Serializable{
     private String name;
     private String description;
-    private int deadline;
+    private String deadline;
 
     private ArrayList<Krav> kravListe = new ArrayList<>();
     private ArrayList<Kollega> kollegaerListe = new ArrayList<>();
@@ -14,6 +14,14 @@ public class Project implements Serializable{
     public Project(String name){
         this.name = name;
         description = "None set yet!";
+    }
+
+    public String getDeadline() {
+        return deadline;
+    }
+
+    public void setDeadline(String deadline) {
+        this.deadline = deadline;
     }
 
     public void setDescription(String description) {

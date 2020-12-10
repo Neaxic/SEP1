@@ -6,12 +6,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
-
-import javafx.scene.control.TextField;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.ListView;
-import javafx.scene.control.Label;
 
 import java.io.IOException;
 
@@ -85,15 +81,19 @@ public class Controller {
 
     @FXML private TextField ProjectName;
     @FXML private TextArea ProjectDescription;
+    @FXML private DatePicker ProjectDeadline;
 
-    public void projectCreate(ActionEvent actionEvent) throws IOException {
+    public void projectCreate(ActionEvent actionEvent) throws IOException, ClassNotFoundException {
         Project newProject = new Project(ProjectName.getText());
         newProject.setDescription(ProjectDescription.getText());
+        newProject.setDeadline(ProjectDeadline.getValue().toString());
         ProjectsList.addProject(newProject);
+
         System.out.println("New Project Title: " +newProject.getName());
+        System.out.println("New Project Deadline: " +newProject.getDeadline());
         System.out.println("New Project Description: " +newProject.getDescription());
         readWrite.SaveProject(ProjectsList);
-        setSceneToMainMenu(actionEvent);
+        setSceneProjectHistory(actionEvent);
     }
 
     public void setSceneCreateProject(ActionEvent event) throws IOException {
@@ -115,8 +115,16 @@ public class Controller {
         System.out.println(readWrite.readProjects().getProjectsList().get(0).getName());
         window.setScene(nytVindue);
         window.show();
-        ProjectLabel.setText("Test");
+        //ProjectLabel.setText("Test");
         //ProjectLabel.setText(readFromFile.readProjects().getProjectsList().get(0).getName());
 
+    }
+
+    // INITIALIZE ALLE LABLES PÅ FORHÅND
+    public void initialize(){
+        System.out.println("test");
+        //ProjectLabel.setText("Test");
+        //ProjectLabel.setText(readFromFile.readProjects().getProjectsList().get(0).getName());
+        //ProjectList.add(readFromFile.readProjects().getProjectsList().get(0).getName());
     }
 }
