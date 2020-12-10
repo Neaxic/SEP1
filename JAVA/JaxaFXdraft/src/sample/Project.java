@@ -1,11 +1,15 @@
 package sample;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Project implements Serializable{
     private String name;
-    private Projects Liste = new Projects();
     private String description;
+    private int deadline;
+
+    private ArrayList<Krav> kravListe = new ArrayList<>();
+    private ArrayList<Kollegaer> kollegaerListe = new ArrayList<>();
 
     public Project(String name){
         this.name = name;
@@ -20,12 +24,24 @@ public class Project implements Serializable{
         return description;
     }
 
-    public void addToProjects(Project project){
-        Liste.addProject(project);
-    }
-
     public String getName() {
         return name;
+    }
+
+    public void addKrav(Krav krav){
+        kravListe.add(krav);
+    }
+
+    public ArrayList<Krav> getKrav(){
+        return kravListe;
+    }
+
+    public void addKollega(Kollega kollega){
+        kollegaerListe.add(kollega);
+    }
+
+    public ArrayList<Kollegaer> getKollega(){
+        return kollegaerListe;
     }
 }
 
