@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
+<?import javafx.scene.control.ListView?>
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Label fx:id="ProjectLabel" alignment="CENTER" prefHeight="140.0" prefWidth="652.0" style="-fx-background-color: lightgray;" text="Project History">
-         <font>
-            <Font size="17.0" />
-         </font>
-      </Label>
-      <HBox alignment="CENTER" prefHeight="198.0" prefWidth="600.0">
-         <children>
-            <Label text="List of projects:" />
-            <ListView fx:id="ProjectList" prefHeight="85.0" prefWidth="200.0">
-               <HBox.margin>
-                  <Insets left="20.0" />
-               </HBox.margin>
-            </ListView>
-         </children>
-      </HBox>
+         <HBox alignment="CENTER" prefHeight="198.0" prefWidth="600.0">
+            <children>
+               <Label text="List of projects:" />
+               <ListView fx:id="ProjectList" prefHeight="85.0" prefWidth="200.0">
+                  <HBox.margin>
+                     <Insets left="20.0" />
+                  </HBox.margin>
+               </ListView>
+            </children>
+         </HBox>
       <Button fx:id="mainMenuCreateNew" mnemonicParsing="false" onAction="#mainMenuSeeAll" prefHeight="50.0" prefWidth="125.0" text="Back" />
    </children>
 </VBox>
