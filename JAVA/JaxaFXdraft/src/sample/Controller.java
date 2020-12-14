@@ -6,18 +6,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
-import javafx.scene.control.TextField;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.ListView;
-import javafx.scene.control.Label;
-
-import java.awt.*;
 import java.io.IOException;
 
 public class Controller {
-
+    Projects ProjectsList = new Projects();
+    ReadWrite readWrite = new ReadWrite();
 /*
     public void loginBut(ActionEvent actionEvent) {
         System.out.println("Logged the fuck in");
@@ -57,7 +53,7 @@ public class Controller {
         setSceneCreateProject(actionEvent);
     }
 
-    public void mainMenuProjectHistory(ActionEvent actionEvent)   throws IOException{
+    public void mainMenuProjectHistory(ActionEvent actionEvent) throws IOException, ClassNotFoundException {
         setSceneProjectHistory(actionEvent);
     }
 
@@ -81,23 +77,23 @@ public class Controller {
         window.show();
     }
 
-    /* CREATE PROJECT */
+    /* CREATE PROJECT ------------------------------------------------ */
 
     @FXML private TextField ProjectName;
     @FXML private TextArea ProjectDescription;
-    @FXML private ListView ProjectList;
-    @FXML private Label ProjectLabel;
+    @FXML private DatePicker ProjectDeadline;
 
-    public void projectCreate(ActionEvent actionEvent) throws IOException {
-        BinaryWriteTest test1 = new BinaryWriteTest();
-
+    public void projectCreate(ActionEvent actionEvent) throws IOException, ClassNotFoundException {
         Project newProject = new Project(ProjectName.getText());
         newProject.setDescription(ProjectDescription.getText());
-        newProject.addToProjects(newProject);
+        newProject.setDeadline(ProjectDeadline.getValue().toString());
+        ProjectsList.addProject(newProject);
+
         System.out.println("New Project Title: " +newProject.getName());
+        System.out.println("New Project Deadline: " +newProject.getDeadline());
         System.out.println("New Project Description: " +newProject.getDescription());
-        test1.SaveProject(newProject);
-        setSceneToMainMenu(actionEvent);
+        readWrite.SaveProject(ProjectsList);
+        setSceneProjectHistory(actionEvent);
     }
 
     public void setSceneCreateProject(ActionEvent event) throws IOException {
@@ -108,14 +104,27 @@ public class Controller {
         window.show();
     }
 
-    public void setSceneProjectHistory(ActionEvent event) throws IOException {
+    /* LIST PROJECTS ------------------------------------------------ */
+
+    @FXML private Label ProjectLabel;
+    @FXML private ListView ProjectList;
+
+    public void setSceneProjectHistory(ActionEvent event) throws IOException, ClassNotFoundException {
         Scene nytVindue = new Scene(FXMLLoader.load(getClass().getResource("ProjectHistory.fxml")));
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
-
+        System.out.println(readWrite.readProjects().getProjectsList().get(0).getName());
         window.setScene(nytVindue);
         window.show();
+        //ProjectLabel.setText("Test");
+        //ProjectLabel.setText(readFromFile.readProjects().getProjectsList().get(0).getName());
 
-        ProjectLabel.setText("test");
+    }
 
+    // INITIALIZE ALLE LABLES PÅ FORHÅND
+    public void initialize(){
+        System.out.println("test");
+        //ProjectLabel.setText("Test");
+        //ProjectLabel.setText(readFromFile.readProjects().getProjectsList().get(0).getName());
+        //ProjectList.add(readFromFile.readProjects().getProjectsList().get(0).getName());
     }
 }

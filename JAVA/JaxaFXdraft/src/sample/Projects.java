@@ -8,9 +8,11 @@ public class Projects implements Serializable{
 
     public void addProject(Project project){
         projectsList.add(project);
+        System.out.println(projectsList.toString());
     }
 
     public ArrayList<Project> getProjectsList() {
         return projectsList;
     }
+
 }

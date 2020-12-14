@@ -2,7 +2,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
@@ -29,21 +28,8 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="63.0" prefWidth="600.0">
          <children>
-            <Label text="Deadline:" />
-            <DatePicker fx:id="ProjectDeadline" promptText="Pick or type a date">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <HBox.margin>
-                  <Insets left="20.0" />
-               </HBox.margin>
-            </DatePicker>
-         </children>
-      </HBox>
-      <HBox alignment="CENTER" prefHeight="63.0" prefWidth="600.0">
-         <children>
             <Label text="Project description: " />
-            <TextArea fx:id="ProjectDescription" prefHeight="200.0" prefWidth="200.0" promptText="Description (if any)">
+            <TextArea fx:id="ProjectDescription" prefHeight="200.0" prefWidth="200.0" promptText="Description">
                <HBox.margin>
                   <Insets left="20.0" />
                </HBox.margin>
@@ -52,8 +38,8 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#mainMenuSeeAll" prefHeight="50.0" prefWidth="125.0" text="Back" />
-            <Button mnemonicParsing="false" onAction="#projectCreate" prefHeight="50.0" prefWidth="125.0" text="Create New Project" />
+            <Button fx:id="projectCreate" mnemonicParsing="false" onAction="#projectCreate" prefHeight="50.0" prefWidth="125.0" text="Back" />
+            <Button fx:id="projectCreate1" mnemonicParsing="false" onAction="#projectCreate" prefHeight="50.0" prefWidth="125.0" text="Create New Project" />
          </children>
       </HBox>
    </children>

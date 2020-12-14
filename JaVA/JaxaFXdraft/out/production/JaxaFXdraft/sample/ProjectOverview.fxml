@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="ProjectLabel" alignment="CENTER" prefHeight="140.0" prefWidth="600.0" style="-fx-background-color: lightgray;" text="Infomation about the">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="209.0" layoutY="81.0" text="&quot;PLACEHOLDER&quot; project">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TreeTableView prefHeight="109.0" prefWidth="600.0">
+         <columns>
+            <TreeTableColumn prefWidth="162.0" text="Name" />
+            <TreeTableColumn prefWidth="164.0" text="Deadline" />
+            <TreeTableColumn prefWidth="162.0" text="Status" />
+         </columns>
+      </TreeTableView>
+      <TreeTableView prefHeight="197.0" prefWidth="600.0">
+        <columns>
+          <TreeTableColumn prefWidth="162.0" text="Colleagues" />
+          <TreeTableColumn prefWidth="164.0" text="Requirements" />
+            <TreeTableColumn prefWidth="164.0" text="Requirements" />
+            <TreeTableColumn prefWidth="164.0" text="Requirements" />
+        </columns>
+      </TreeTableView>
+   </children>
+</VBox>

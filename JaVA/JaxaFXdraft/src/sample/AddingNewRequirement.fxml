@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="ProjectLabel" alignment="CENTER" prefHeight="140.0" prefWidth="652.0" style="-fx-background-color: lightgray;" text="Project History">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label />
+      <HBox alignment="CENTER" prefHeight="198.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="134.0" prefWidth="250.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="344.0" text="Please select a project:" />
+                  <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="280.0" text="Select what project you would like" />
+                  <Label prefHeight="17.0" prefWidth="376.0" text="to know more about" />
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </VBox>
+            <ListView fx:id="ProjectList" prefHeight="180.0" prefWidth="288.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ListView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="mainMenuCreateNew" mnemonicParsing="false" onAction="#mainMenuSeeAll" prefHeight="50.0" prefWidth="125.0" text="Back" />
+            <Button fx:id="mainMenuCreateNew1" mnemonicParsing="false" onAction="#mainMenuSeeAll" prefHeight="50.0" prefWidth="125.0" text="Continue" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

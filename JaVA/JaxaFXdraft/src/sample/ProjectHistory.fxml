@@ -13,18 +13,29 @@
       <Label fx:id="ProjectLabel" alignment="CENTER" prefHeight="140.0" prefWidth="652.0" style="-fx-background-color: lightgray;" text="Project History">
          <font>
             <Font size="17.0" />
-         </font>
-      </Label>
-      <HBox alignment="CENTER" prefHeight="198.0" prefWidth="600.0">
+         </font></Label>
+         <HBox alignment="CENTER" prefHeight="198.0" prefWidth="600.0">
+            <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="185.0" prefWidth="232.0">
+               <children>
+                  <Label text="List of projects:" />
+                     <Label text="Select what project you would" />
+                  <Label text="like to know more about" />
+               </children>
+            </VBox>
+               <ListView fx:id="ProjectList" prefHeight="185.0" prefWidth="253.0">
+                  <HBox.margin>
+                     <Insets left="20.0" />
+                  </HBox.margin>
+               </ListView>
+            </children>
+         </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Label text="List of projects:" />
-            <ListView fx:id="ProjectList" prefHeight="85.0" prefWidth="200.0">
-               <HBox.margin>
-                  <Insets left="20.0" />
-               </HBox.margin>
-            </ListView>
+            <Button mnemonicParsing="false" onAction="#mainMenuSeeAll" prefHeight="50.0" prefWidth="125.0" text="Back" />
+            <Button mnemonicParsing="false" onAction="#mainMenuSeeAll" prefHeight="50.0" prefWidth="125.0" text="Delete" />
+            <Button mnemonicParsing="false" onAction="#mainMenuSeeAll" prefHeight="50.0" prefWidth="125.0" text="View more" />
          </children>
       </HBox>
-      <Button fx:id="mainMenuCreateNew" mnemonicParsing="false" onAction="#mainMenuSeeAll" prefHeight="50.0" prefWidth="125.0" text="Back" />
    </children>
 </VBox>
