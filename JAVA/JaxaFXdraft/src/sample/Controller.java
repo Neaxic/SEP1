@@ -14,25 +14,7 @@ import java.io.IOException;
 public class Controller {
     Projects ProjectsList = new Projects();
     ReadWrite readWrite = new ReadWrite();
-/*
-    public void loginBut(ActionEvent actionEvent) {
-        System.out.println("Logged the fuck in");
-    }
 
-    public void cancelBut(ActionEvent actionEvent) throws IOException {
-        System.out.println("Canceled - So closed the program");
-
-        Parent andetWindowParent = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        Scene andetWindow = new Scene(andetWindowParent);
-
-        //Stage information
-        Stage window = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
-
-        window.setScene(andetWindow);
-        window.show();
-
-    }
-*/
     public void loginScrum(ActionEvent actionEvent)  throws IOException{
         setSceneToMainMenu(actionEvent);
     }
@@ -92,6 +74,7 @@ public class Controller {
         System.out.println("New Project Title: " +newProject.getName());
         System.out.println("New Project Deadline: " +newProject.getDeadline());
         System.out.println("New Project Description: " +newProject.getDescription());
+        System.out.println(ProjectsList.getProjectsList());
         readWrite.SaveProject(ProjectsList);
         setSceneProjectHistory(actionEvent);
     }
@@ -115,14 +98,13 @@ public class Controller {
         System.out.println(readWrite.readProjects().getProjectsList().get(0).getName());
         window.setScene(nytVindue);
         window.show();
-        //ProjectLabel.setText("Test");
+        ProjectLabel.setText("Test");
         //ProjectLabel.setText(readFromFile.readProjects().getProjectsList().get(0).getName());
 
     }
 
     // INITIALIZE ALLE LABLES PÅ FORHÅND
     public void initialize(){
-        System.out.println("test");
         //ProjectLabel.setText("Test");
         //ProjectLabel.setText(readFromFile.readProjects().getProjectsList().get(0).getName());
         //ProjectList.add(readFromFile.readProjects().getProjectsList().get(0).getName());

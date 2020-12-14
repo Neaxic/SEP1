@@ -4,14 +4,14 @@ import java.io.*;
 
 public class ReadWrite {
 
-    public void SaveProject(Projects project) throws IOException {
+    public void SaveProject(Projects projects) throws IOException {
         String filename = "Database.bin";
         File file = new File(filename);
 
         FileOutputStream fos = new FileOutputStream(file);
         ObjectOutputStream out = new ObjectOutputStream(fos);
 
-        out.writeObject(project);
+        out.writeObject(projects);
         out.close();
     }
 
