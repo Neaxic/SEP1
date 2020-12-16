@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import javafx.scene.control.Label;
 
 import java.io.IOException;
 
@@ -89,15 +90,18 @@ public class Controller {
 
     /* LIST PROJECTS ------------------------------------------------ */
 
+
     @FXML private Label ProjectLabel;
     @FXML private ListView ProjectList;
 
     public void setSceneProjectHistory(ActionEvent event) throws IOException, ClassNotFoundException {
+
         Scene nytVindue = new Scene(FXMLLoader.load(getClass().getResource("ProjectHistory.fxml")));
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
         System.out.println(readWrite.readProjects().getProjectsList().get(0).getName());
         window.setScene(nytVindue);
         window.show();
+
         ProjectLabel.setText("Test");
         //ProjectLabel.setText(readFromFile.readProjects().getProjectsList().get(0).getName());
 
