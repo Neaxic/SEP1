@@ -12,6 +12,16 @@ public class Main extends Application {
     static ReadWrite readWrite = new ReadWrite();
     static Projects ProjectsList = new Projects();
 
+    private static Project ItemSelected;
+
+    public static Project getItemSelected() {
+        return ItemSelected;
+    }
+
+    public static void setItemSelected(Project itemSelected) {
+        ItemSelected = itemSelected;
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception{
 

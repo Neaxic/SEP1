@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreatingProjectController">
+<VBox  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ProjectOverviewController">
    <children>
       <AnchorPane prefHeight="411.0" prefWidth="600.0" style="-fx-background-color: lightgray;">
          <children>
@@ -17,7 +17,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label contentDisplay="CENTER" layoutX="13.0" layoutY="44.0" prefHeight="30.0" prefWidth="171.0" text="project 1">
+            <Label fx:id="ProjectName" contentDisplay="CENTER" layoutX="13.0" layoutY="44.0" prefHeight="30.0" prefWidth="171.0" text="project 1">
                <font>
                   <Font size="17.0" />
                </font>
@@ -30,7 +30,7 @@
                   <TreeTableColumn prefWidth="62.0" text="Status" />
               </columns>
             </TreeTableView>
-            <Button layoutX="38.0" layoutY="347.0" mnemonicParsing="false" text="Back" />
+            <Button onAction="#back" layoutX="38.0" layoutY="347.0" mnemonicParsing="false" text="Back" />
             <Button layoutX="90.0" layoutY="347.0" mnemonicParsing="false" text="Configure" />
             <Label contentDisplay="CENTER" layoutX="13.0" layoutY="142.0" prefHeight="30.0" prefWidth="171.0" text="Svend Trapper A/S">
                <font>

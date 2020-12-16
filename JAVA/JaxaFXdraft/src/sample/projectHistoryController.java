@@ -12,13 +12,13 @@ import javafx.stage.Stage;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class projectHistoryController {
 
     @FXML private Label ProjectLabel;
     @FXML private ListView ProjectList;
-
 
     public void back(ActionEvent event) throws IOException {
         Parent andetWindowParent = FXMLLoader.load(getClass().getResource("mainMenu.fxml"));
@@ -41,6 +41,16 @@ public class projectHistoryController {
     public void delete(ActionEvent actionEvent) {
     }
 
-    public void viewMore(ActionEvent actionEvent) {
+    public void viewMore(ActionEvent event) throws IOException {
+        Main.setItemSelected(Main.ProjectsList.getProjectsList().get(ProjectList.getSelectionModel().getSelectedIndex()));
+        Parent andetWindowParent = FXMLLoader.load(getClass().getResource("ProjectOverview.fxml"));
+        Scene andetWindow = new Scene(andetWindowParent);
+
+        //Stage information
+        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+
+        window.setScene(andetWindow);
+        window.show();
     }
+
 }

@@ -1,14 +1,11 @@
 package sample;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
 import javafx.stage.Stage;
-import javafx.scene.control.Label;
 
 import java.io.IOException;
 
@@ -39,7 +36,7 @@ public class mainMenuController {
     }
 
     public void mainMenuSeeAll(ActionEvent event) throws IOException, ClassNotFoundException {
-        Scene nytVindue = new Scene(FXMLLoader.load(getClass().getResource("seeAllProjects.fxml")));
+        Scene nytVindue = new Scene(FXMLLoader.load(getClass().getResource("ProjectOverview.fxml")));
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
 
         window.setScene(nytVindue);
