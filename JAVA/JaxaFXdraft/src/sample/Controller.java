@@ -44,10 +44,6 @@ public class Controller {
         newProject.setDeadline(ProjectDeadline.getValue().toString());
         ProjectsList.addProject(newProject);
 
-        System.out.println("New Project Title: " +newProject.getName());
-        System.out.println("New Project Deadline: " +newProject.getDeadline());
-        System.out.println("New Project Description: " +newProject.getDescription());
-        System.out.println(ProjectsList.getProjectsList());
         readWrite.SaveProject(ProjectsList);
         setSceneProjectHistory(actionEvent);
     }

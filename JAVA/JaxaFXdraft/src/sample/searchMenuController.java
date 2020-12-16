@@ -55,6 +55,16 @@ public class searchMenuController {
         window.show();
     }
 
-    public void seeMore(ActionEvent actionEvent) {
+    public void seeMore(ActionEvent event) throws IOException {
+        System.out.println(Main.getItemSelected().getName());
+        Main.setItemSelected(Main.ProjectsList.getProjectsList().get(ProjectList.getSelectionModel().getSelectedIndex()));
+        Parent andetWindowParent = FXMLLoader.load(getClass().getResource("ProjectOverview.fxml"));
+        Scene andetWindow = new Scene(andetWindowParent);
+
+        //Stage information
+        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+
+        window.setScene(andetWindow);
+        window.show();
     }
 }

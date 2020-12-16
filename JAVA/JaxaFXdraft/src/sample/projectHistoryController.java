@@ -9,7 +9,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 
-import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 
 import java.awt.*;
@@ -17,7 +16,6 @@ import java.io.IOException;
 
 public class projectHistoryController {
 
-    @FXML private Label ProjectLabel;
     @FXML private ListView ProjectList;
 
     public void back(ActionEvent event) throws IOException {
@@ -32,13 +30,14 @@ public class projectHistoryController {
     }
 
     public void initialize() throws IOException, ClassNotFoundException {
-        ProjectLabel.setText(String.valueOf(Main.ProjectsList.getProjectsList().size()));
         for(int i = 0; i < Main.ProjectsList.getProjectsList().size(); i++){
             ProjectList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i).getName());
         };
     }
 
-    public void delete(ActionEvent actionEvent) {
+    public void delete(ActionEvent actionEvent) throws IOException {
+        Main.ProjectsList.getProjectsList().remove(Main.ProjectsList.getProjectsList().get(ProjectList.getSelectionModel().getSelectedIndex()));
+        Main.readWrite.SaveProject(Main.ProjectsList);
     }
 
     public void viewMore(ActionEvent event) throws IOException {

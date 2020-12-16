@@ -31,9 +31,10 @@ public class Main extends Application {
 
         primaryStage.show();
         primaryStage.setResizable(false);
-
-        for(int i = 0; i < readWrite.readProjects().getProjectsList().size(); i++){
-            ProjectsList.addProject(readWrite.readProjects().getProjectsList().get(i));
+        if(readWrite.readProjects().getProjectsList().size() > 0){
+            for(int i = 0; i < readWrite.readProjects().getProjectsList().size(); i++){
+                ProjectsList.addProject(readWrite.readProjects().getProjectsList().get(i));
+            }
         }
     }
 
