@@ -46,8 +46,12 @@ public class mainMenuController {
         window.show();
     }
 
-    public void mainMenuSearch(ActionEvent actionEvent)   throws IOException{
+    public void mainMenuSearch(ActionEvent event)   throws IOException{
+        Scene nytVindue = new Scene(FXMLLoader.load(getClass().getResource("searchMenu.fxml")));
+        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
 
+        window.setScene(nytVindue);
+        window.show();
     }
 
 
