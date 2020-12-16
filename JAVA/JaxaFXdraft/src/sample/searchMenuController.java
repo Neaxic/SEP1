@@ -56,7 +56,7 @@ public class searchMenuController {
     }
 
     public void seeMore(ActionEvent event) throws IOException {
-        //System.out.println(Main.getItemSelected().getName());
+        System.out.println(Main.getItemSelected().getName());
         //Main.setItemSelected(Main.ProjectsList.getProjectsList().get(ProjectList.getSelectionModel().getSelectedIndex()));
         Parent andetWindowParent = FXMLLoader.load(getClass().getResource("ProjectOverview.fxml"));
         Scene andetWindow = new Scene(andetWindowParent);

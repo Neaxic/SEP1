@@ -1,24 +1,30 @@
 package sample;
 
+import com.sun.source.tree.Tree;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.DatePicker;
+import javafx.scene.control.*;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import javafx.util.Callback;
 
 import java.awt.*;
 import java.io.IOException;
-
-import javafx.scene.control.Label;
 
 public class ProjectOverviewController {
 
     @FXML private Label ProjectName;
     @FXML private Label ProjectDeadline;
     @FXML private Label ProjectDescription;
+
+    @FXML private ListView CollList;
+    @FXML private ListView RoleList;
+    @FXML private ListView ReqList;
 
     public void back(ActionEvent event) throws IOException {
         Parent andetWindowParent = FXMLLoader.load(getClass().getResource("mainMenu.fxml"));
@@ -31,10 +37,20 @@ public class ProjectOverviewController {
         window.show();
     }
 
-    public void initialize(){
+    public void initialize() throws IOException, ClassNotFoundException {
+        System.out.println(Main.getItemSelected().getName());
         ProjectName.setText(Main.getItemSelected().getName());
         ProjectDeadline.setText(Main.getItemSelected().getDeadline());
         ProjectDescription.setText(Main.getItemSelected().getDescription());
+        for(int i = 0; i < Main.ProjectsList.getProjectsList().size(); i++){
+            CollList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i).getKollega());
+        };
+        for(int i = 0; i < Main.ProjectsList.getProjectsList().size(); i++){
+            RoleList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i).getKollega());
+        };
+        for(int i = 0; i < Main.ProjectsList.getProjectsList().size(); i++){
+            ReqList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i).getKrav());
+        };
     }
 }
 

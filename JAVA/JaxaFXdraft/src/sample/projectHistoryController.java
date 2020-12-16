@@ -9,8 +9,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 
-import javafx.scene.control.ListView;
-
 import java.awt.*;
 import java.io.IOException;
 
