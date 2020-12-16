@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class selectRoleController {
+public class loginSceneController {
 
     public void loginScrum(ActionEvent actionEvent)  throws IOException {
         setSceneToMainMenu(actionEvent);

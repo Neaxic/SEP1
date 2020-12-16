@@ -1,2 +1,4 @@
-package sample;public class seeAllProjectsController {
+package sample;
+
+public class seeAllProjectsController {
 }

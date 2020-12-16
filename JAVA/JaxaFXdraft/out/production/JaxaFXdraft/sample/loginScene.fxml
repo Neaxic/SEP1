@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginSceneController">
    <children>
       <Label fx:id="LabelNr1" alignment="CENTER" contentDisplay="CENTER" prefHeight="82.0" prefWidth="640.0" style="-fx-background-color: lightgray;" text="Welcome to Colour IT´s IT project management system" textAlignment="CENTER">
          <font>

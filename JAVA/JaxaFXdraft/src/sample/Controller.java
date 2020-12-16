@@ -13,40 +13,12 @@ import javafx.scene.control.Label;
 import java.io.IOException;
 
 public class Controller {
-    Projects ProjectsList = new Projects();
     ReadWrite readWrite = new ReadWrite();
+    Projects ProjectsList = new Projects();
 
-    public void loginScrum(ActionEvent actionEvent)  throws IOException{
-        setSceneToMainMenu(actionEvent);
-    }
 
-    public void loginOwner(ActionEvent actionEvent)   throws IOException{
-        setSceneToMainMenu(actionEvent);
-    }
 
-    public void loginCreator(ActionEvent actionEvent)   throws IOException{
-        setSceneToMainMenu(actionEvent);
-    }
 
-    public void loginMember(ActionEvent actionEvent)   throws IOException{
-        setSceneToMainMenu(actionEvent);
-    }
-
-    public void mainMenuCreateNew(ActionEvent actionEvent)   throws IOException{
-        setSceneCreateProject(actionEvent);
-    }
-
-    public void mainMenuProjectHistory(ActionEvent actionEvent) throws IOException, ClassNotFoundException {
-        setSceneProjectHistory(actionEvent);
-    }
-
-    public void mainMenuSearch(ActionEvent actionEvent)   throws IOException{
-        setSceneToMainMenu(actionEvent);
-    }
-
-    public void mainMenuSeeAll(ActionEvent actionEvent)   throws IOException{
-        setSceneToMainMenu(actionEvent);
-    }
 
     public void setSceneToMainMenu(ActionEvent event) throws IOException {
 
@@ -102,7 +74,7 @@ public class Controller {
         window.setScene(nytVindue);
         window.show();
 
-        ProjectLabel.setText("Test");
+        //ProjectLabel.setText("Test");
         //ProjectLabel.setText(readFromFile.readProjects().getProjectsList().get(0).getName());
 
     }
@@ -112,5 +84,8 @@ public class Controller {
         //ProjectLabel.setText("Test");
         //ProjectLabel.setText(readFromFile.readProjects().getProjectsList().get(0).getName());
         //ProjectList.add(readFromFile.readProjects().getProjectsList().get(0).getName());
+    }
+
+    public void mainMenuSeeAll(ActionEvent actionEvent) {
     }
 }
