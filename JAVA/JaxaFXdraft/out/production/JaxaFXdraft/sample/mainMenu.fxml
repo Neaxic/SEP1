@@ -21,16 +21,14 @@
                   <Insets left="10.0" right="10.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="mainMenuProjectHistory" mnemonicParsing="false" onAction="#mainMenuProjectHistory" prefHeight="50.0" prefWidth="125.0" text="Project History">
+            <Button fx:id="mainMenuProjectHistory" mnemonicParsing="false" onAction="#mainMenuProjectHistory" prefHeight="50.0" prefWidth="125.0" text="All Projects">
                <HBox.margin>
                   <Insets left="10.0" right="10.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="mainMenuSeeAll" mnemonicParsing="false" onAction="#mainMenuSeeAll" prefHeight="50.0" prefWidth="125.0" text="See All Projects">
-               <HBox.margin>
-                  <Insets left="10.0" right="10.0" />
-               </HBox.margin>
-            </Button>
+
+
+
             <Button fx:id="mainMenuSearch" mnemonicParsing="false" onAction="#mainMenuSearch" prefHeight="50.0" prefWidth="125.0" text="Search">
                <HBox.margin>
                   <Insets left="10.0" right="10.0" />

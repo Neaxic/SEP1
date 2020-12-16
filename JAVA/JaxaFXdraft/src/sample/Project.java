@@ -10,9 +10,10 @@ public class Project implements Serializable{
     private String deadline;
 
     private ArrayList<Krav> kravListe = new ArrayList<>();
-   // private ArrayList<String> kollegaerListe = new ArrayList<>();
-   // private ArrayList<String> kollegaerRoller = new ArrayList<>();
+   //private ArrayList<String> kollegaerNavneListe = new ArrayList<String>();
+   //private ArrayList<String> kollegaerRoller = new ArrayList<>();
    private ArrayList<Kollega> kollegaerListe = new ArrayList<>();
+    private int kakak = 0;
 
     public Project(String name){
         this.name = name;
@@ -46,22 +47,29 @@ public class Project implements Serializable{
     public ArrayList<Krav> getKrav(){
         return kravListe;
     }
+/*
+    public void setKollegaerListe(ArrayList<String> kollegaerNavneListe) {
+        this.kollegaerNavneListe = kollegaerNavneListe;
+    }
 
-    //public void setKollegaerListe(ArrayList<String> kollegaerListe) {
-      //  this.kollegaerListe = kollegaerListe;
-    //}
+    public void setKollegaerRoller(ArrayList<String> kollegaerRoller) {
+        this.kollegaerRoller = kollegaerRoller;
+    }
 
-    //public void setKollegaerRoller(ArrayList<String> kollegaerRoller) {
-     //   this.kollegaerRoller = kollegaerRoller;
-    //}
-
-    //public ArrayList<String> getKollegaer(){
-      //  return kollegaerListe;
-    //}
-
+    public ArrayList<String> getKollegaer(){
+        return kollegaerNavneListe;
+    }
+ */
+/*
     public void addKollega(Kollega kollega){
         kollegaerListe.add(kollega);
     }
 
-    public ArrayList<Kollega> getKollega(){return kollegaerListe;}
+    public ArrayList<Kollega> getKollega(){
+        return kollegaerListe;
+    }
+
+
+ */
+
 }

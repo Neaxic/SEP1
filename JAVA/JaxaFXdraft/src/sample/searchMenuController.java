@@ -37,7 +37,7 @@ public class searchMenuController {
             //System.out.println(Main.ProjectsList.getProjectsList().get(4).getName());
             searchInput.setText("");
         }
-
+        ProjectList.getItems().clear();
         for(int i = 0; i < result.size(); i++){
             ProjectList.getItems().add(result.get(i).getName());
         };
