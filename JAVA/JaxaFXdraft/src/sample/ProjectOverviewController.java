@@ -43,10 +43,10 @@ public class ProjectOverviewController {
         ProjectDeadline.setText(Main.getItemSelected().getDeadline());
         ProjectDescription.setText(Main.getItemSelected().getDescription());
         for(int i = 0; i < Main.ProjectsList.getProjectsList().size(); i++){
-            CollList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i).getKollega());
+            CollList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i).getName());
         };
         for(int i = 0; i < Main.ProjectsList.getProjectsList().size(); i++){
-            RoleList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i).getKollega());
+            RoleList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i));
         };
         for(int i = 0; i < Main.ProjectsList.getProjectsList().size(); i++){
             ReqList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i).getKrav());

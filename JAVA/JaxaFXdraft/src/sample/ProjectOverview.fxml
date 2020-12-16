@@ -44,10 +44,10 @@
                   <Label layoutX="157.0" layoutY="14.0" text="Role" />
                   <ProgressBar layoutX="19.0" layoutY="360.0" prefHeight="18.0" prefWidth="372.0" progress="0.25" />
                   <Label layoutX="19.0" layoutY="336.0" text="Total progress" />
-                  <ListView layoutX="19.0" layoutY="41.0" prefHeight="283.0" prefWidth="128.0" />
+                  <ListView fx:id="CollList" layoutX="19.0" layoutY="41.0" prefHeight="283.0" prefWidth="128.0" />
                   <Label layoutX="219.0" layoutY="14.0" text="All requirements" />
-                  <ListView layoutX="219.0" layoutY="41.0" prefHeight="283.0" prefWidth="171.0" />
-                  <ListView layoutX="155.0" layoutY="41.0" prefHeight="283.0" prefWidth="57.0" />
+                  <ListView fx:id="RoleList" layoutX="219.0" layoutY="41.0" prefHeight="283.0" prefWidth="171.0" />
+                  <ListView fx:id="ReqList" layoutX="155.0" layoutY="41.0" prefHeight="283.0" prefWidth="57.0" />
                </children>
             </Pane>
          </children>
