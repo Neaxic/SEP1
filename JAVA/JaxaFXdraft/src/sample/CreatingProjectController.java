@@ -36,10 +36,6 @@ public class CreatingProjectController {
         newProject.setDeadline(ProjectDeadline.getValue().toString());
         Main.ProjectsList.addProject(newProject);
 
-        System.out.println("New Project Title: " +newProject.getName());
-        System.out.println("New Project Deadline: " +newProject.getDeadline());
-        System.out.println("New Project Description: " +newProject.getDescription());
-        System.out.println(Main.ProjectsList.getProjectsList());
         Main.readWrite.SaveProject(Main.ProjectsList);
 
         Parent andetWindowParent = FXMLLoader.load(getClass().getResource("ProjectHistory.fxml"));
