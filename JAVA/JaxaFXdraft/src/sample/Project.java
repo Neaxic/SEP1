@@ -1,7 +1,7 @@
 package sample;
 
 import java.io.Serializable;
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 
 public class Project implements Serializable{
@@ -10,8 +10,9 @@ public class Project implements Serializable{
     private String deadline;
 
     private ArrayList<Krav> kravListe = new ArrayList<>();
-    private ArrayList<String> kollegaerListe = new ArrayList<>();
-    private ArrayList<String> kollegaerRoller = new ArrayList<>();
+   // private ArrayList<String> kollegaerListe = new ArrayList<>();
+   // private ArrayList<String> kollegaerRoller = new ArrayList<>();
+   private ArrayList<Kollega> kollegaerListe = new ArrayList<>();
 
     public Project(String name){
         this.name = name;
@@ -46,16 +47,21 @@ public class Project implements Serializable{
         return kravListe;
     }
 
-    public void setKollegaerListe(ArrayList<String> kollegaerListe) {
-        this.kollegaerListe = kollegaerListe;
+    //public void setKollegaerListe(ArrayList<String> kollegaerListe) {
+      //  this.kollegaerListe = kollegaerListe;
+    //}
+
+    //public void setKollegaerRoller(ArrayList<String> kollegaerRoller) {
+     //   this.kollegaerRoller = kollegaerRoller;
+    //}
+
+    //public ArrayList<String> getKollegaer(){
+      //  return kollegaerListe;
+    //}
+
+    public void addKollega(Kollega kollega){
+        kollegaerListe.add(kollega);
     }
 
-    public void setKollegaerRoller(ArrayList<String> kollegaerRoller) {
-        this.kollegaerRoller = kollegaerRoller;
-    }
-
-    public ArrayList<String> getKollegaer(){
-        return kollegaerListe;
-    }
+    public ArrayList<Kollega> getKollega(){return kollegaerListe;}
 }
-

@@ -50,5 +50,4 @@ public class Main extends Application {
     HUSK FREMOVER: fx:controller="sample.Controller"  i ydereste pane
     HUSK FREMOVER: prefHeight="400.0" prefWidth="640.0"
 ** I Controller & Main **
-
 */

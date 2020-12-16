@@ -41,14 +41,10 @@ public class CreatingProjectController {
         Project newProject = new Project(ProjectName.getText());
         newProject.setDescription(ProjectDescription.getText());
         newProject.setDeadline(ProjectDeadline.getValue().toString());
-        newProject.setKollegaerListe(namesTemp);
-        newProject.setKollegaerRoller(rolesTemp);
+        //newProject.setKollegaerListe(namesTemp);
+        //newProject.setKollegaerRoller(rolesTemp);
         Main.ProjectsList.addProject(newProject);
 
-        System.out.println("New Project Title: " +newProject.getName());
-        System.out.println("New Project Deadline: " +newProject.getDeadline());
-        System.out.println("New Project Description: " +newProject.getDescription());
-        System.out.println(Main.ProjectsList.getProjectsList());
         Main.readWrite.SaveProject(Main.ProjectsList);
 
         Parent andetWindowParent = FXMLLoader.load(getClass().getResource("ProjectHistory.fxml"));
