@@ -9,7 +9,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-
+    static ReadWrite readWrite = new ReadWrite();
+    static Projects ProjectsList = new Projects();
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -21,8 +22,9 @@ public class Main extends Application {
         primaryStage.show();
         primaryStage.setResizable(false);
 
-
-
+        for(int i = 0; i < readWrite.readProjects().getProjectsList().size(); i++){
+            ProjectsList.addProject(readWrite.readProjects().getProjectsList().get(i));
+        }
     }
 
 
