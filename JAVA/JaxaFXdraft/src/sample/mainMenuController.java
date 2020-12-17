@@ -52,9 +52,11 @@ public class mainMenuController {
     }
 
 
+    public void mainMenuSearchCol(ActionEvent event) throws IOException {
+        Scene nytVindue = new Scene(FXMLLoader.load(getClass().getResource("searchColMenu.fxml")));
+        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
 
-
-
-
-
+        window.setScene(nytVindue);
+        window.show();
+    }
 }
