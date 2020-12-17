@@ -9,11 +9,11 @@ public class Project implements Serializable{
     private String description;
     private String deadline;
 
-    private ArrayList<Krav> kravListe = new ArrayList<>();
-   //private ArrayList<String> kollegaerNavneListe = new ArrayList<String>();
-   //private ArrayList<String> kollegaerRoller = new ArrayList<>();
-   private ArrayList<Kollega> kollegaerListe = new ArrayList<>();
-    private int kakak = 0;
+    private ArrayList<String> requirements = new ArrayList<>();
+   private ArrayList<String> kollegaerNavneListe = new ArrayList<String>();
+   private ArrayList<String> kollegaerRoller = new ArrayList<>();
+
+
 
     public Project(String name){
         this.name = name;
@@ -40,14 +40,7 @@ public class Project implements Serializable{
         return name;
     }
 
-    public void addKrav(Krav krav){
-        kravListe.add(krav);
-    }
 
-    public ArrayList<Krav> getKrav(){
-        return kravListe;
-    }
-/*
     public void setKollegaerListe(ArrayList<String> kollegaerNavneListe) {
         this.kollegaerNavneListe = kollegaerNavneListe;
     }
@@ -59,17 +52,16 @@ public class Project implements Serializable{
     public ArrayList<String> getKollegaer(){
         return kollegaerNavneListe;
     }
- */
-/*
-    public void addKollega(Kollega kollega){
-        kollegaerListe.add(kollega);
+
+    public ArrayList<String> getKollegaerRoller() {
+        return kollegaerRoller;
     }
 
-    public ArrayList<Kollega> getKollega(){
-        return kollegaerListe;
+    public void setRequirements(ArrayList<String> x) {
+        requirements = x;
     }
 
-
- */
-
+    public ArrayList<String> getRequirements() {
+        return requirements;
+    }
 }

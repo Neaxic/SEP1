@@ -47,7 +47,7 @@
             <Insets left="25.0" />
          </VBox.margin>
       </HBox>
-      <HBox alignment="CENTER_LEFT" prefHeight="82.0" prefWidth="575.0">
+      <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="575.0">
          <children>
             <Label prefWidth="120.0" text="Colleagues" />
             <ListView fx:id="ColleaguesName" prefHeight="82.0" prefWidth="174.0">
@@ -61,7 +61,7 @@
             <Insets left="25.0" />
          </VBox.margin>
       </HBox>
-      <HBox prefHeight="38.0" prefWidth="575.0">
+      <HBox prefHeight="32.0" prefWidth="575.0">
          <children>
             <Label prefWidth="120.0" text="Add a Colleagues" />
             <TextField fx:id="ColleaguesNameInput" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="174.0" promptText="Colleague Name">
@@ -79,15 +79,20 @@
             <Insets left="25.0" />
          </VBox.margin>
       </HBox>
-      <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="600.0">
+      <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="575.0">
          <children>
             <Label prefWidth="120.0" text="Requirements" />
-            <TextField fx:id="Requirements" prefHeight="12.0" prefWidth="149.0" promptText="Name">
+            <ListView fx:id="RequirementsListView" prefHeight="48.0" prefWidth="171.0">
                <HBox.margin>
                   <Insets left="20.0" />
                </HBox.margin>
+            </ListView>
+            <TextField fx:id="RequirementsTextField" prefHeight="12.0" prefWidth="149.0" promptText="Requirement">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
             </TextField>
-            <Button mnemonicParsing="false" text="Add requirement" />
+            <Button onAction="#addRequirement" mnemonicParsing="false" text="Add requirement" />
          </children>
          <VBox.margin>
             <Insets left="25.0" />
