@@ -48,6 +48,7 @@ public class CreatingProjectController {
         newProject.setDeadline(ProjectDeadline.getValue().toString());
         newProject.setKollegaerListe(namesTemp);
         newProject.setKollegaerRoller(rolesTemp);
+        newProject.setRequirements(requirements);
         Main.ProjectsList.addProject(newProject);
 
         Main.readWrite.SaveProject(Main.ProjectsList);

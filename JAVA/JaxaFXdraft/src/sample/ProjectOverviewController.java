@@ -42,15 +42,28 @@ public class ProjectOverviewController {
         ProjectName.setText(Main.getItemSelected().getName());
         ProjectDeadline.setText(Main.getItemSelected().getDeadline());
         ProjectDescription.setText(Main.getItemSelected().getDescription());
-        for(int i = 0; i < Main.ProjectsList.getProjectsList().size(); i++){
-            CollList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i).getName());
-        };
-        for(int i = 0; i < Main.ProjectsList.getProjectsList().size(); i++){
-            RoleList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i));
-        };
-        for(int i = 0; i < Main.ProjectsList.getProjectsList().size(); i++){
-            ReqList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i).getKrav());
-        };
+
+            for (int j = 0; j < Main.getItemSelected().getKollegaer().size(); j++) {
+                CollList.getItems().add(Main.getItemSelected().getKollegaer().get(j));
+                //System.out.println(Main.getItemSelected().getRequirements().size());
+            }
+
+            //RoleList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i));
+
+        for (int i = 0; i < Main.getItemSelected().getKollegaerRoller().size(); i++) {
+            ReqList.getItems().add(Main.getItemSelected().getKollegaerRoller().get(i));
+        }
+
+        for (int i = 0; i < Main.getItemSelected().getRequirements().size(); i++) {
+            RoleList.getItems().add(Main.getItemSelected().getRequirements().get(i));
+        }
+
+        /*for(int i = 0; i < Main.ProjectsList.getProjectsList().size(); i++){
+            for (int j = 0; j < Main.readWrite.readProjects().getProjectsList().get(i).getRequirements().size(); j++) {
+                ReqList.getItems().add(Main.readWrite.readProjects().getProjectsList().get(i).getRequirements().get(j));
+            }
+
+        };*/
     }
 }
 
