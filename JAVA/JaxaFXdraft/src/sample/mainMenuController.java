@@ -10,7 +10,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class mainMenuController {
-    ReadWrite readWrite = new ReadWrite();
 
     public void mainMenuCreateNew(ActionEvent event)   throws IOException {
         Parent andetWindowParent = FXMLLoader.load(getClass().getResource("CreatingProject.fxml"));
@@ -26,21 +25,12 @@ public class mainMenuController {
     public void mainMenuProjectHistory(ActionEvent event) throws IOException, ClassNotFoundException {
         Scene nytVindue = new Scene(FXMLLoader.load(getClass().getResource("ProjectHistory.fxml")));
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        System.out.println(readWrite.readProjects().getProjectsList().get(0).getName());
         window.setScene(nytVindue);
         window.show();
 
 
         //ProjectLabel.setText("Test");
         //ProjectLabel.setText(readFromFile.readProjects().getProjectsList().get(0).getName());
-    }
-
-    public void mainMenuSeeAll(ActionEvent event) throws IOException, ClassNotFoundException {
-        Scene nytVindue = new Scene(FXMLLoader.load(getClass().getResource("ProjectOverview.fxml")));
-        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
-
-        window.setScene(nytVindue);
-        window.show();
     }
 
     public void mainMenuSearch(ActionEvent event)   throws IOException{

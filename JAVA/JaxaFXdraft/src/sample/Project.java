@@ -61,8 +61,8 @@ public class Project implements Serializable{
         return kollegaerRoller;
     }
 
-    public void setRequirements(ArrayList<String> x) {
-        requirements = x;
+    public void setRequirements(ArrayList<String> Requirement) {
+        requirements = Requirement;
     }
 
     public ArrayList<String> getRequirements() {
