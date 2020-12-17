@@ -29,7 +29,7 @@
 
 
 
-            <Button fx:id="mainMenuSearch" mnemonicParsing="false" onAction="#mainMenuSearch" prefHeight="50.0" prefWidth="125.0" text="Search">
+            <Button fx:id="mainMenuSearch" mnemonicParsing="false" onAction="#mainMenuSearch" prefHeight="50.0" prefWidth="125.0" text="Search Projects">
                <HBox.margin>
                   <Insets left="10.0" right="10.0" />
                </HBox.margin>

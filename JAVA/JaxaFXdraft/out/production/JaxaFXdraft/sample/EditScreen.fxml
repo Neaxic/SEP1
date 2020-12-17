@@ -7,63 +7,31 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditScreenController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditScreenController">
    <children>
       <Label alignment="CENTER" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: lightgray;" text="Edit only if necessay">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="600.0">
+      <Label layoutX="93.0" layoutY="114.0" text="Edit only what you want to change! Leave empty if you do not wish to change." />
+      <Label layoutX="32.0" layoutY="139.0" text="Project name" />
+      <TextField fx:id="ProjectName" layoutX="32.0" layoutY="162.0" prefHeight="12.0" prefWidth="149.0" promptText="Name" />
+      <Label layoutX="32.0" layoutY="200.0" prefWidth="120.0" text="Deadline:" />
+      <DatePicker fx:id="ProjectDeadline" layoutX="32.0" layoutY="224.0" promptText="Pick or type a date">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </DatePicker>
+      <Label layoutX="220.0" layoutY="139.0" prefWidth="120.0" text="Colleagues" />
+      <ListView fx:id="ColleaguesName" layoutX="220.0" layoutY="167.0" prefHeight="82.0" prefWidth="174.0" />
+      <ListView fx:id="ColleaguesRole" layoutX="400.0" layoutY="167.0" prefHeight="82.0" prefWidth="166.0" />
+      <HBox layoutX="202.0" layoutY="283.0" prefHeight="32.0" prefWidth="396.0">
          <children>
-            <Label prefWidth="120.0" text="Project name: " />
-            <TextField fx:id="ProjectName" prefHeight="12.0" prefWidth="149.0" promptText="Name">
-               <HBox.margin>
-                  <Insets left="20.0" />
-               </HBox.margin>
-            </TextField>
-         </children>
-         <VBox.margin>
-            <Insets left="25.0" />
-         </VBox.margin>
-      </HBox>
-      <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="600.0">
-         <children>
-            <Label prefWidth="120.0" text="Deadline:" />
-            <DatePicker fx:id="ProjectDeadline" promptText="Pick or type a date">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <HBox.margin>
-                  <Insets left="20.0" />
-               </HBox.margin>
-            </DatePicker>
-         </children>
-         <VBox.margin>
-            <Insets left="25.0" />
-         </VBox.margin>
-      </HBox>
-      <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="575.0">
-         <children>
-            <Label prefWidth="120.0" text="Colleagues" />
-            <ListView fx:id="ColleaguesName" prefHeight="82.0" prefWidth="174.0">
-               <HBox.margin>
-                  <Insets left="20.0" />
-               </HBox.margin>
-            </ListView>
-            <ListView fx:id="ColleaguesRole" prefHeight="82.0" prefWidth="166.0" />
-         </children>
-         <VBox.margin>
-            <Insets left="25.0" />
-         </VBox.margin>
-      </HBox>
-      <HBox prefHeight="32.0" prefWidth="575.0">
-         <children>
-            <Label prefWidth="120.0" text="Add a Colleagues" />
             <TextField fx:id="ColleaguesNameInput" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="174.0" promptText="Colleague Name">
                <HBox.margin>
                   <Insets left="20.0" />
@@ -73,52 +41,27 @@
             <Button fx:id="addColleague" mnemonicParsing="false" onAction="#addColleague" text="Add Colleague">
                <font>
                   <Font size="12.0" />
-               </font></Button>
+               </font>
+            </Button>
          </children>
-         <VBox.margin>
-            <Insets left="25.0" />
-         </VBox.margin>
       </HBox>
-      <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="575.0">
-         <children>
-            <Label prefWidth="120.0" text="Requirements" />
-            <ListView fx:id="RequirementsListView" prefHeight="48.0" prefWidth="171.0">
-               <HBox.margin>
-                  <Insets left="20.0" />
-               </HBox.margin>
-            </ListView>
-            <TextField fx:id="RequirementsTextField" prefHeight="12.0" prefWidth="149.0" promptText="Requirement">
-               <HBox.margin>
-                  <Insets />
-               </HBox.margin>
-            </TextField>
-            <Button mnemonicParsing="false" onAction="#addRequirement" text="Add requirement" />
-         </children>
-         <VBox.margin>
-            <Insets left="25.0" />
-         </VBox.margin>
-      </HBox>
-      <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="600.0">
-         <children>
-            <Label prefWidth="120.0" text="Project description: " />
-            <TextArea fx:id="ProjectDescription" prefHeight="34.0" prefWidth="200.0" promptText="Description (if any)">
-               <HBox.margin>
-                  <Insets left="20.0" />
-               </HBox.margin>
-            </TextArea>
-         </children>
-         <VBox.margin>
-            <Insets left="25.0" />
-         </VBox.margin>
-      </HBox>
-      <HBox alignment="CENTER" prefHeight="59.0" prefWidth="600.0">
+      <Label layoutX="220.0" layoutY="258.0" prefWidth="120.0" text="Add a Colleague" />
+      <Label layoutX="33.0" layoutY="258.0" prefWidth="120.0" text="Project description: " />
+      <TextArea fx:id="ProjectDescription" layoutX="32.0" layoutY="283.0" prefHeight="152.0" prefWidth="174.0" promptText="Description (if any)" />
+      <Label layoutX="220.0" layoutY="322.0" prefWidth="120.0" text="Requirements" />
+      <ListView fx:id="RequirementsListView" layoutX="222.0" layoutY="349.0" prefHeight="82.0" prefWidth="174.0" />
+      <TextField fx:id="RequirementsTextField" layoutX="409.0" layoutY="347.0" prefHeight="12.0" prefWidth="149.0" promptText="Requirement" />
+      <Button layoutX="409.0" layoutY="378.0" mnemonicParsing="false" onAction="#addRequirement" text="Add requirement" />
+      <HBox alignment="CENTER" layoutY="452.0" prefHeight="59.0" prefWidth="600.0">
          <children>
             <Button mnemonicParsing="false" onAction="#mainMenuSeeAll" prefHeight="50.0" prefWidth="125.0" text="Back">
                <HBox.margin>
                   <Insets />
-               </HBox.margin></Button>
+               </HBox.margin>
+            </Button>
             <Button mnemonicParsing="false" onAction="#EditProject" prefHeight="50.0" prefWidth="125.0" text="Edit" />
          </children>
       </HBox>
+      <Label layoutX="129.0" layoutY="200.0" prefHeight="17.0" prefWidth="77.0" text="(must select)" />
    </children>
-</VBox>
+</AnchorPane>
