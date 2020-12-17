@@ -20,6 +20,10 @@ public class Project implements Serializable{
         description = "None set yet!";
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getDeadline() {
         return deadline;
     }
@@ -63,5 +67,11 @@ public class Project implements Serializable{
 
     public ArrayList<String> getRequirements() {
         return requirements;
+    }
+
+    public Project copy(Project project, String navn){
+        Project project1 = new Project(navn);
+        project = (Project) project1;
+        return project1;
     }
 }

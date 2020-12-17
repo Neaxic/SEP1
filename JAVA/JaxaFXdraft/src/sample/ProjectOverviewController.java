@@ -37,6 +37,17 @@ public class ProjectOverviewController {
         window.show();
     }
 
+    public void editProjectScene(ActionEvent event) throws IOException {
+        Parent andetWindowParent = FXMLLoader.load(getClass().getResource("EditScreen.fxml"));
+        Scene andetWindow = new Scene(andetWindowParent);
+
+        //Stage information
+        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+
+        window.setScene(andetWindow);
+        window.show();
+    }
+
     public void initialize() throws IOException, ClassNotFoundException {
         System.out.println(Main.getItemSelected().getName());
         ProjectName.setText(Main.getItemSelected().getName());
