@@ -3,8 +3,6 @@ package Module;
 import java.util.ArrayList;
 import java.io.Serializable;
 
-import Module.Project;
-
 public class Projects implements Serializable{
     private ArrayList<Project> projectsList = new ArrayList<Project>();
 

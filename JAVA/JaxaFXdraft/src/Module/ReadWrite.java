@@ -1,12 +1,11 @@
 package Module;
 
 import java.io.*;
-import Module.*;
 
 public class ReadWrite {
 
-    public void SaveProject(Projects projects) throws IOException {
-        String filename = "../Database.bin";
+    public void saveProject(Projects projects) throws IOException {
+        String filename = "Database.bin";
         File file = new File(filename);
 
         FileOutputStream fos = new FileOutputStream(file);
@@ -17,7 +16,7 @@ public class ReadWrite {
     }
 
     public Projects readProjects() throws IOException, ClassNotFoundException {
-        String filename = "../Database.bin";
+        String filename = "Database.bin";
         File file = new File(filename);
 
         FileInputStream fis = new FileInputStream(file);

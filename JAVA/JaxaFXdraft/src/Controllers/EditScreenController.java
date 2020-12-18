@@ -92,7 +92,7 @@ public class EditScreenController {
 
         Main.ProjectsList.addProject(newProject);
 
-        Main.readWrite.SaveProject(Main.ProjectsList);
+        Main.readWrite.saveProject(Main.ProjectsList);
 
         viewhandler.setSceneSelect("ProjectHistory");
         viewhandler.SwitchScenes(event);

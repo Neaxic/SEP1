@@ -6,6 +6,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.Label;
 import java.io.IOException;
 import Module.*;
+import org.w3c.dom.Text;
 
 public class ProjectOverviewController {
 
@@ -13,7 +14,7 @@ public class ProjectOverviewController {
 
     @FXML private Label ProjectName;
     @FXML private Label ProjectDeadline;
-    @FXML private Label ProjectDescription;
+    @FXML private Text ProjectDescription;
 
     @FXML private ListView CollList;
     @FXML private ListView RoleList;
@@ -32,7 +33,7 @@ public class ProjectOverviewController {
     public void initialize() throws IOException, ClassNotFoundException {
         ProjectName.setText(Main.getItemSelected().getName());
         ProjectDeadline.setText(Main.getItemSelected().getDeadline());
-        ProjectDescription.setText(Main.getItemSelected().getDescription());
+        //ProjectDescription.setData(Main.getItemSelected().getDescription());
 
             for (int j = 0; j < Main.getItemSelected().getKollegaer().size(); j++) {
                 CollList.getItems().add(Main.getItemSelected().getKollegaer().get(j));

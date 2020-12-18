@@ -4,13 +4,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import Module.*;
 
 public class Main extends Application {
 
     public static ReadWrite readWrite = new ReadWrite();
+    public static ReadWriteColleague readWriteColleague = new ReadWriteColleague();
     public static Projects ProjectsList = new Projects();
-
+    public static KollegaList ColleagueList = new KollegaList();
     private static Project ItemSelected;
 
     public static Project getItemSelected() {
@@ -35,6 +35,11 @@ public class Main extends Application {
                 ProjectsList.addProject(readWrite.readProjects().getProjectsList().get(i));
             }
         }
+        if(readWriteColleague.readKollega().getKollegaList().size() > 0){
+            for(int i = 0; i < readWriteColleague.readKollega().getKollegaList().size(); i++){
+                ColleagueList.addKollega(readWriteColleague.readKollega().getKollegaList().get(i));
+            }
+        }
     }
 
 
@@ -42,12 +47,3 @@ public class Main extends Application {
         launch(args);
     }
 }
-
-
-//Noter
-/*
-** I FXML FILER**
-    HUSK FREMOVER: fx:controller="sample.Controller"  i ydereste pane
-    HUSK FREMOVER: prefHeight="400.0" prefWidth="640.0"
-** I Controller & Main **
-*/

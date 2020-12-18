@@ -2,22 +2,15 @@ package Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
-import Module.Project;
-import Module.Main;
-import Module.Viewhandler;
+import Module.*;
 
 public class CreatingProjectController {
 
@@ -27,7 +20,7 @@ public class CreatingProjectController {
     private ArrayList<String> rolesTemp = new ArrayList<>();
     private ArrayList<String> requirements = new ArrayList<>();
 
-    public void mainMenuSeeAll(ActionEvent event) throws IOException {
+    public void back(ActionEvent event) throws IOException {
         viewhandler.setSceneSelect("mainMenu");
         viewhandler.SwitchScenes(event);
     }
@@ -51,9 +44,9 @@ public class CreatingProjectController {
         newProject.setRequirements(requirements);
         Main.ProjectsList.addProject(newProject);
 
-        Main.readWrite.SaveProject(Main.ProjectsList);
+        Main.readWrite.saveProject(Main.ProjectsList);
 
-        viewhandler.setSceneSelect("ProjectHistory");
+        viewhandler.setSceneSelect("mainMenu");
         viewhandler.SwitchScenes(event);
     }
 
@@ -74,10 +67,13 @@ public class CreatingProjectController {
 
     @FXML private TextField RequirementsTextField;
     @FXML private ListView RequirementsListView;
-    public void addRequirement(ActionEvent actionEvent) {
-        requirements.add(RequirementsTextField.getText());
-        RequirementsListView.getItems().add(RequirementsTextField.getText());
 
-        RequirementsTextField.setText("");
+    public void addRequirement() {
+        if(RequirementsTextField.getText() != ""){
+            requirements.add(RequirementsTextField.getText());
+            RequirementsListView.getItems().add(RequirementsTextField.getText());
+
+            RequirementsTextField.setText("");
+        }
     }
 }
