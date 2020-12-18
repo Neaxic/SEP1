@@ -36,6 +36,8 @@ public class Main extends Application {
                 ProjectsList.addProject(readWrite.readProjects().getProjectsList().get(i));
             }
         }
+
+
     }
 
 
