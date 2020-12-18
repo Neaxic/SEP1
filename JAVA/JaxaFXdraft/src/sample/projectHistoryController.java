@@ -33,7 +33,7 @@ public class projectHistoryController {
         };
     }
 
-    public void delete(ActionEvent actionEvent) throws IOException {
+    public void delete() throws IOException {
         Main.ProjectsList.getProjectsList().remove(Main.ProjectsList.getProjectsList().get(ProjectList.getSelectionModel().getSelectedIndex()));
         Main.readWrite.SaveProject(Main.ProjectsList);
     }
