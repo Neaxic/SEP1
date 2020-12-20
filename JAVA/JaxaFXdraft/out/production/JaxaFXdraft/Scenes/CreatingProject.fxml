@@ -35,7 +35,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <ListView fx:id="ProjectList1" layoutX="451.0" layoutY="98.0" prefHeight="136.0" prefWidth="391.0" />
+      <ListView fx:id="ColleagueList" layoutX="451.0" layoutY="98.0" prefHeight="136.0" prefWidth="391.0" />
       <Label layoutX="34.0" layoutY="223.0" text="PROJECT">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -87,9 +87,9 @@
       <TextField fx:id="RequirementsTextField" layoutX="451.0" layoutY="493.0" prefHeight="25.0" prefWidth="391.0" promptText="Requirement" />
       <Button layoutX="451.0" layoutY="521.0" mnemonicParsing="false" onAction="#addRequirement" text="ADD REQUIREMENT" />
       <Button layoutX="39.0" layoutY="478.0" mnemonicParsing="false" onAction="#projectCreate" prefHeight="31.0" prefWidth="181.0" text="CREATE NEW PROJECT" />
-      <Button layoutX="451.0" layoutY="279.0" mnemonicParsing="false" onAction="#addRequirement" text="ADD COLLEAGUE " />
-      <ChoiceBox layoutX="451.0" layoutY="249.0" prefHeight="25.0" prefWidth="236.0" />
-      <ChoiceBox layoutX="693.0" layoutY="249.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button layoutX="451.0" layoutY="279.0" mnemonicParsing="false" onAction="#addColleague" text="ADD COLLEAGUE " />
+      <ChoiceBox fx:id="ColleagueName" layoutX="451.0" layoutY="249.0" prefHeight="25.0" prefWidth="236.0" />
+      <ChoiceBox fx:id="ColleagueRole" layoutX="693.0" layoutY="249.0" prefHeight="25.0" prefWidth="149.0" />
       <Label layoutX="25.0" layoutY="223.0" text="*">
          <font>
             <Font name="System Bold" size="15.0" />

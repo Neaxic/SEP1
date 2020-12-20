@@ -1,7 +1,11 @@
 package Controllers;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.chart.Chart;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.*;
 import javafx.scene.control.Label;
 import java.io.IOException;
@@ -20,6 +24,8 @@ public class ProjectOverviewController {
     @FXML private ListView RoleList;
     @FXML private ListView ReqList;
 
+    @FXML private PieChart PieChart;
+
     public void back(ActionEvent event) throws IOException {
         viewhandler.setSceneSelect("mainMenu");
         viewhandler.SwitchScenes(event);
@@ -33,19 +39,27 @@ public class ProjectOverviewController {
     public void initialize() throws IOException, ClassNotFoundException {
         ProjectName.setText(Main.getItemSelected().getName());
         ProjectDeadline.setText(Main.getItemSelected().getDeadline());
+
+        ObservableList<PieChart.Data> pieChartData =
+                FXCollections.observableArrayList(
+                        new PieChart.Data("Finished", 55),
+                        new PieChart.Data("Rejected",4),
+                        new PieChart.Data("In Progress", 30),
+                        new PieChart.Data("Pending", 30));
+        PieChart.setData(pieChartData);
+        PieChart.animatedProperty();
+
+
         //ProjectDescription.setData(Main.getItemSelected().getDescription());
 
-            for (int j = 0; j < Main.getItemSelected().getKollegaer().size(); j++) {
-                CollList.getItems().add(Main.getItemSelected().getKollegaer().get(j));
+            for (int j = 0; j < Main.getItemSelected().getColleagueNames().size(); j++) {
+                CollList.getItems().add(Main.getItemSelected().getColleagueNames().get(j));
+                RoleList.getItems().add(Main.getItemSelected().getColleagueRoles().get(j));
             }
 
-        for (int i = 0; i < Main.getItemSelected().getKollegaerRoller().size(); i++) {
-            ReqList.getItems().add(Main.getItemSelected().getKollegaerRoller().get(i));
-        }
-
-        for (int i = 0; i < Main.getItemSelected().getRequirements().size(); i++) {
-            RoleList.getItems().add(Main.getItemSelected().getRequirements().get(i));
-        }
+            for (int i = 0; i < Main.getItemSelected().getRequirements().size(); i++) {
+                ReqList.getItems().add(Main.getItemSelected().getRequirements().get(i));
+            }
 
     }
 }

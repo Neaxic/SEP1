@@ -71,7 +71,7 @@ public class EditScreenController {
         } else {
             newProject.setDeadline(Main.getItemSelected().getDeadline());
         }
-
+/*
         if (namesTemp != Main.getItemSelected().getKollegaer() && rolesTemp.size() != 0) {
             newProject.setKollegaerListe(namesTemp);
         } else {
@@ -83,7 +83,7 @@ public class EditScreenController {
         } else {
             newProject.setKollegaerRoller(Main.getItemSelected().getKollegaerRoller());
         }
-
+*/
         if (requirements != Main.getItemSelected().getRequirements() && rolesTemp.size() != 0) {
             newProject.setRequirements(requirements);
         } else {

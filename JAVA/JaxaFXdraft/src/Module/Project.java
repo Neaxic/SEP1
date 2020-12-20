@@ -13,7 +13,8 @@ public class Project implements Serializable{
    private ArrayList<String> kollegaerNavneListe = new ArrayList<String>();
    private ArrayList<String> kollegaerRoller = new ArrayList<>();
 
-
+    private ArrayList<String> ColleagueNames = new ArrayList<String>();
+    private ArrayList<String> ColleagueRoles = new ArrayList<>();
 
     public Project(String name){
         this.name = name;
@@ -43,6 +44,27 @@ public class Project implements Serializable{
     public String getName() {
         return name;
     }
+
+    public void setColleagueNames(String name){
+        ColleagueNames.add(name);
+    }
+
+    public void setColleagueRoles(String role){
+        ColleagueRoles.add(role);
+    }
+
+    public ArrayList<String> getColleagueNames() {
+        return ColleagueNames;
+    }
+
+    public ArrayList<String> getColleagueRoles() {
+        return ColleagueRoles;
+    }
+
+
+
+
+
 
 
     public void setKollegaerListe(ArrayList<String> kollegaerNavneListe) {
