@@ -29,6 +29,7 @@ public class CreatingProjectController {
     @FXML private ChoiceBox ColleagueName;
     @FXML private ChoiceBox ColleagueRole;
     @FXML private ListView ColleagueList;
+    @FXML private ListView ColleagueRoleList;
 
     @FXML private TextField RequirementsTextField;
     @FXML private ListView RequirementsListView;
@@ -45,11 +46,12 @@ public class CreatingProjectController {
     }
 
     public void addColleague(){
-        if(ColleagueName.getValue() != null || ColleagueList.getItems().contains(ColleagueName.getValue()) == true){
+        if(ColleagueName.getValue() != null && ColleagueRole.getValue() != null || ColleagueList.getItems().contains(ColleagueName.getValue()) == true){
             //Kollega newKollega = new Kollega(ColleagueName.getValue().toString());
             //newKollega.setRole(ColleagueRole.getValue().toString());
             //newKollega.setBirthday(Main.ColleagueList.getKollegaList().get(ColleagueName.getItems().indexOf(ColleagueName.getValue())).getBirthday());
             ColleagueList.getItems().add(ColleagueName.getValue());
+            ColleagueRoleList.getItems().add(ColleagueRole.getValue());
             ColleagueName.getItems().remove(ColleagueName.getValue());
             ColleagueName.setValue(Main.ColleagueList.getKollegaList().get(0).getNavn());
         } else {
@@ -63,8 +65,8 @@ public class CreatingProjectController {
         newProject.setDeadline(ProjectDeadline.getValue().toString());
         newProject.setRequirements(requirements);
             for(int i = 0; i < ColleagueList.getItems().size(); i++){
-                newProject.setColleagueNames(ColleagueName.getItems().get(i).toString());
-                newProject.setColleagueRoles(ColleagueRole.getItems().get(i).toString());
+                newProject.setColleagueNames(ColleagueList.getItems().get(i).toString());
+                newProject.setColleagueRoles(ColleagueRoleList.getItems().get(i).toString());
             }
         Main.ProjectsList.addProject(newProject);
 
