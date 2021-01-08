@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CreatingProjectController">
+   <children>
+      <Label layoutX="32.0" layoutY="22.0" text="COLOUR IT">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="27.0" text="- MANAGEMENT SYSTEM">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="782.0" layoutY="25.0" mnemonicParsing="false" text="SEARCH" />
+      <Label layoutX="33.0" layoutY="98.0" text="CREATE A NEW PROJECT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="722.0" layoutY="25.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="60.0" text="HOME" />
+      <Label layoutX="451.0" layoutY="69.0" text="ALL COLLEAGUES ON PROJECT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="ColleagueList" layoutX="451.0" layoutY="98.0" prefHeight="136.0" prefWidth="236.0" />
+      <Label layoutX="34.0" layoutY="223.0" text="PROJECT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="240.0" text="DEADLINE:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="158.0" text="PROJECT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="175.0" text="NAME:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="39.0" layoutY="515.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="181.0" text="GO BACK">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Label layoutX="451.0" layoutY="322.0" text="ALL REQUIREMENTS ON PROJECT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="RequirementsListView" layoutX="451.0" layoutY="351.0" prefHeight="136.0" prefWidth="391.0" />
+      <Label layoutX="34.0" layoutY="285.0" text="PROJECT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="302.0" text="DESCRIPTION:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="ProjectDescription" layoutX="164.0" layoutY="285.0" prefHeight="136.0" prefWidth="174.0" promptText="Description (if any)" />
+      <TextField fx:id="ProjectName" layoutX="164.0" layoutY="163.0" prefHeight="12.0" prefWidth="149.0" promptText="Name" />
+      <DatePicker fx:id="ProjectDeadline" layoutX="164.0" layoutY="228.0" promptText="Pick or type a date">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </DatePicker>
+      <TextField fx:id="RequirementsTextField" layoutX="451.0" layoutY="493.0" prefHeight="25.0" prefWidth="391.0" promptText="Requirement" />
+      <Button layoutX="451.0" layoutY="521.0" mnemonicParsing="false" onAction="#addRequirement" text="ADD REQUIREMENT" />
+      <Button layoutX="39.0" layoutY="478.0" mnemonicParsing="false" onAction="#projectCreate" prefHeight="31.0" prefWidth="181.0" text="CREATE NEW PROJECT" />
+      <Button layoutX="451.0" layoutY="279.0" mnemonicParsing="false" onAction="#addColleague" text="ADD COLLEAGUE " />
+      <ChoiceBox fx:id="ColleagueName" layoutX="451.0" layoutY="249.0" prefHeight="25.0" prefWidth="236.0" />
+      <ChoiceBox fx:id="ColleagueRole" layoutX="693.0" layoutY="249.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="25.0" layoutY="223.0" text="*">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="158.0" text="*">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="119.0" text="FIELDS WITH * MUST BE FILLED">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </Label>
+      <ListView fx:id="ColleagueRoleList" layoutX="685.0" layoutY="98.0" prefHeight="136.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>

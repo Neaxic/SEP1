@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CreatingColleagueController">
+   <children>
+      <Label layoutX="32.0" layoutY="22.0" text="COLOUR IT">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="27.0" text="- MANAGEMENT SYSTEM">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="782.0" layoutY="25.0" mnemonicParsing="false" text="SEARCH" />
+      <Label layoutX="37.0" layoutY="149.0" text="ADD A NEW COLLEAGUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="722.0" layoutY="25.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="60.0" text="HOME" />
+      <!-- <Button layoutX="563.0" layoutY="25.0" mnemonicParsing="false" onAction="#delete" prefHeight="21.0" prefWidth="60.0" text="Delete" /> -->
+      <Label layoutX="451.0" layoutY="69.0" text="ALL COLLEAGUES">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="colleagueList" layoutX="451.0" layoutY="98.0" prefHeight="457.0" prefWidth="391.0" />
+      <TextField fx:id="colleagueName" layoutX="169.0" layoutY="194.0" prefHeight="12.0" prefWidth="149.0" promptText="Name" />
+      <DatePicker fx:id="colleagueBirthday" layoutX="169.0" layoutY="267.0" promptText="Birthday" />
+      <Label layoutX="39.0" layoutY="261.0" text="COLLEAGUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="278.0" text="BIRTHDAY:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="189.0" text="COLLEAGUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="206.0" text="NAME:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="projectCreate1" layoutX="39.0" layoutY="334.0" mnemonicParsing="false" onAction="#createColleague" prefHeight="31.0" prefWidth="181.0" text="ADD NEW COLLEAGUE">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Button layoutX="39.0" layoutY="375.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="181.0" text="GO BACK">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
