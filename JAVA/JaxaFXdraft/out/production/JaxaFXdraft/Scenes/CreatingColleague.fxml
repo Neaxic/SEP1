@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CreatingColleagueController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CreatingColleagueController">
    <children>
       <Label layoutX="32.0" layoutY="22.0" text="COLOUR IT">
          <font>
@@ -33,7 +33,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <ListView fx:id="colleagueList" layoutX="451.0" layoutY="98.0" prefHeight="457.0" prefWidth="391.0" />
+      <ListView fx:id="colleagueList" layoutX="471.0" layoutY="106.0" prefHeight="457.0" prefWidth="246.0" />
       <TextField fx:id="colleagueName" layoutX="169.0" layoutY="194.0" prefHeight="12.0" prefWidth="149.0" promptText="Name" />
       <DatePicker fx:id="colleagueBirthday" layoutX="169.0" layoutY="267.0" promptText="Birthday" />
       <Label layoutX="39.0" layoutY="261.0" text="COLLEAGUE">
@@ -56,12 +56,18 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Button fx:id="projectCreate1" layoutX="39.0" layoutY="334.0" mnemonicParsing="false" onAction="#createColleague" prefHeight="31.0" prefWidth="181.0" text="ADD NEW COLLEAGUE">
+      <Button fx:id="projectCreate1" layoutX="244.0" layoutY="350.0" mnemonicParsing="false" onAction="#createColleague" prefHeight="31.0" prefWidth="181.0" text="ADD NEW COLLEAGUE">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
       </Button>
-      <Button layoutX="39.0" layoutY="375.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="181.0" text="GO BACK">
+      <Button layoutX="39.0" layoutY="350.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="181.0" text="GO BACK">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <ListView fx:id="colleagueBirthdayList" layoutX="717.0" layoutY="106.0" prefHeight="457.0" prefWidth="130.0" />
+      <Button fx:id="delete" layoutX="244.0" layoutY="395.0" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="181.0" text="DELETE SELECTED">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>

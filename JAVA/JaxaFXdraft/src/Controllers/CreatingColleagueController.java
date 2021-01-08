@@ -22,6 +22,7 @@ public class CreatingColleagueController {
     @FXML private TextField colleagueName;
     @FXML private DatePicker colleagueBirthday;
     @FXML private ListView colleagueList;
+    @FXML private ListView colleagueBirthdayList;
 
     public void back(ActionEvent event) throws IOException {
         viewhandler.setSceneSelect("mainMenu");
@@ -31,7 +32,15 @@ public class CreatingColleagueController {
     public void initialize(){
         for(int i = 0; i < Main.ColleagueList.getKollegaList().size();i++){
             colleagueList.getItems().add(Main.ColleagueList.getKollegaList().get(i).getNavn());
+            colleagueBirthdayList.getItems().add(Main.ColleagueList.getKollegaList().get(i).getBirthday());
         }
+    }
+
+    public void delete(ActionEvent event) throws IOException {
+        Main.ColleagueList.getKollegaList().remove(Main.ColleagueList.getKollegaList().get(colleagueList.getSelectionModel().getSelectedIndex()));
+        Main.readWriteColleague.saveKollega(Main.ColleagueList);
+        viewhandler.setSceneSelect("CreatingColleague");
+        viewhandler.SwitchScenes(event);
     }
 
     public void createColleague(ActionEvent event) throws IOException {
