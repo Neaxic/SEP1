@@ -4,6 +4,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import parser.XmlJsonParser;
+
+import java.io.File;
 
 public class Main extends Application {
 
@@ -41,7 +44,11 @@ public class Main extends Application {
                 ColleagueList.addKollega(readWriteColleague.readKollega().getKollegaList().get(i));
             }
         }
-        
+
+        // PARSER (kører på startup - dårligt design)
+        XmlJsonParser parser = new XmlJsonParser();
+        File file = parser.toXml(ProjectsList, "dataProjects.xml");
+        System.out.println("Generated file: " +file.getAbsolutePath());
 
     }
 

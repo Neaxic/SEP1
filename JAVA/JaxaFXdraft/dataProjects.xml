@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Projects>
+  <projectsList>
+    <requirements>NEJ</requirements>
+    <name>Hejsa</name>
+    <description>DD</description>
+    <deadline>2021-01-13</deadline>
+    <ColleagueNames>Tom</ColleagueNames>
+    <ColleagueNames>Michael</ColleagueNames>
+    <ColleagueRoles>PROJECT CREATOR</ColleagueRoles>
+    <ColleagueRoles>PROJECT OWNER</ColleagueRoles>
+  </projectsList>
+</Projects>
